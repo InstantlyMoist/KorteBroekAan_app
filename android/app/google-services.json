@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "11015255472",
+    "firebase_url": "https://korte-broek-aan-default-rtdb.firebaseio.com",
+    "project_id": "korte-broek-aan",
+    "storage_bucket": "korte-broek-aan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11015255472:android:87b2b6a998f6f3c74a9275",
+        "android_client_info": {
+          "package_name": "me.kyllian.korte_broek_aan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11015255472-tui7h6uh0ivjbli1d55sjb6h3dtq80fl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhU65-WF85GxfAOCTCTsUSTDa0ezEwuTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11015255472-tui7h6uh0ivjbli1d55sjb6h3dtq80fl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "11015255472-3o3b96v5vu8pqd86fgg2vqcoudlue5af.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "me.kyllian.kortebroekaan.kortebroekaan"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-1364717858891314~7329627897"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11015255472:android:cc9196d4b25216464a9275",
+        "android_client_info": {
+          "package_name": "me.kyllian.korte_broek_aan.kortebroekaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11015255472-tui7h6uh0ivjbli1d55sjb6h3dtq80fl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhU65-WF85GxfAOCTCTsUSTDa0ezEwuTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11015255472-tui7h6uh0ivjbli1d55sjb6h3dtq80fl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "11015255472-3o3b96v5vu8pqd86fgg2vqcoudlue5af.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "me.kyllian.kortebroekaan.kortebroekaan"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

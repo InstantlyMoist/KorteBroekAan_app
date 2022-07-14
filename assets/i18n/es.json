@@ -1,0 +1,274 @@
+{
+  "_forecasts": {
+    "1000": {
+      "day": "Soleado",
+      "night": "Brillante"
+    },
+    "1003": {
+      "day": "Parcialmente nublado",
+      "night": "Parcialmente nublado"
+    },
+    "1006": {
+      "day": "Nuboso",
+      "night": "Nuboso"
+    },
+    "1009": {
+      "day": "Nuboso",
+      "night": "Nuboso"
+    },
+    "1030": {
+      "day": "brumoso",
+      "night": "brumoso"
+    },
+    "1063": {
+      "day": "Lluvia irregular posible",
+      "night": "Lluvia irregular posible"
+    },
+    "1066": {
+      "day": "Nieve irregular posible",
+      "night": "Nieve irregular posible"
+    },
+    "1069": {
+      "day": "Nieve húmeda irregular posible",
+      "night": "Nieve húmeda irregular posible"
+    },
+    "1072": {
+      "day": "Posible llovizna congelada irregular",
+      "night": "Posible llovizna congelada irregular"
+    },
+    "1087": {
+      "day": "Tormentas eléctricas posibles",
+      "night": "Tormentas eléctricas posibles"
+    },
+    "1114": {
+      "day": "Nieve",
+      "night": "Nieve"
+    },
+    "1117": {
+      "day": "tormenta de nieve",
+      "night": "tormenta de nieve"
+    },
+    "1135": {
+      "day": "niebla",
+      "night": "niebla"
+    },
+    "1147": {
+      "day": "niebla congelada",
+      "night": "niebla congelada"
+    },
+    "1150": {
+      "day": "Llovizna ligera irregular",
+      "night": "Llovizna ligera irregular"
+    },
+    "1153": {
+      "day": "llovizna ligera",
+      "night": "llovizna ligera"
+    },
+    "1168": {
+      "day": "llovizna helada",
+      "night": "llovizna helada"
+    },
+    "1171": {
+      "day": "Llovizna helada fuerte",
+      "night": "Llovizna helada fuerte"
+    },
+    "1180": {
+      "day": "Lluvia ligera irregular",
+      "night": "Lluvia ligera irregular"
+    },
+    "1183": {
+      "day": "Lluvia ligera",
+      "night": "Lluvia ligera"
+    },
+    "1186": {
+      "day": "Lluvia moderada ocasional",
+      "night": "Lluvia moderada ocasional"
+    },
+    "1189": {
+      "day": "lluvia moderada",
+      "night": "lluvia moderada"
+    },
+    "1192": {
+      "day": "Lluvia fuerte ocasional",
+      "night": "Lluvia fuerte ocasional"
+    },
+    "1195": {
+      "day": "Lluvia Pesada",
+      "night": "Lluvia Pesada"
+    },
+    "1198": {
+      "day": "Lluvia helada ligera",
+      "night": "Lluvia helada ligera"
+    },
+    "1201": {
+      "day": "Lluvia congelada moderada o fuerte",
+      "night": "Lluvia congelada moderada o fuerte"
+    },
+    "1204": {
+      "day": "hielo ligero",
+      "night": "hielo ligero"
+    },
+    "1207": {
+      "day": "Hielo moderado o pesado",
+      "night": "Hielo moderado o pesado"
+    },
+    "1210": {
+      "day": "Nieve ligera irregular",
+      "night": "Nieve ligera irregular"
+    },
+    "1213": {
+      "day": "nieve ligera",
+      "night": "nieve ligera"
+    },
+    "1216": {
+      "day": "Nieve moderada irregular",
+      "night": "Nieve moderada irregular"
+    },
+    "1219": {
+      "day": "Nieve moderada",
+      "night": "Nieve moderada"
+    },
+    "1222": {
+      "day": "Nevadas fuertes e irregulares",
+      "night": "Nevadas fuertes e irregulares"
+    },
+    "1225": {
+      "day": "fuertes nevadas",
+      "night": "fuertes nevadas"
+    },
+    "1237": {
+      "day": "Granizo",
+      "night": "Granizo"
+    },
+    "1240": {
+      "day": "lluvia ligera",
+      "night": "lluvia ligera,"
+    },
+    "1243": {
+      "day": "Lluvias moderadas o fuertes",
+      "night": "Lluvias moderadas o fuertes"
+    },
+    "1246": {
+      "day": "lluvia fuerte",
+      "night": "lluvia fuerte"
+    },
+    "1249": {
+      "day": "Nieve mojada ligera",
+      "night": "Nieve mojada ligera"
+    },
+    "1252": {
+      "day": "Nieve mojada moderada o pesada",
+      "night": "Nieve mojada moderada o pesada"
+    },
+    "1255": {
+      "day": "lluvia ligera de nieve",
+      "night": "lluvia ligera de nieve"
+    },
+    "1258": {
+      "day": "Nevadas moderadas o fuertes",
+      "night": "Nevadas moderadas o fuertes"
+    },
+    "1261": {
+      "day": "Granizada ligera",
+      "night": "Granizada ligera"
+    },
+    "1264": {
+      "day": "Granizada moderada o fuerte",
+      "night": "Granizada moderada o fuerte"
+    },
+    "1273": {
+      "day": "Lluvia ligera irregular con relámpagos",
+      "night": "Lluvia ligera irregular con relámpagos"
+    },
+    "1276": {
+      "day": "Lluvia moderada o fuerte con relámpagos",
+      "night": "Lluvia moderada o fuerte con relámpagos"
+    },
+    "1279": {
+      "day": "Nieve ligera irregular con relámpagos",
+      "night": "Nieve ligera irregular con relámpagos"
+    },
+    "1282": {
+      "day": "Nevadas moderadas o fuertes con relámpagos",
+      "night": "Nevadas moderadas o fuertes con relámpagos"
+    }
+  },
+  "_days": {
+    "today": "Este Dia",
+    "tomorrow": "Mañana",
+    "day_after_tomorrow": "Pasado mañana"
+  },
+  "_sheets": {
+    "_location_type_sheet": {
+      "title": "¿Podemos saber su ubicación?",
+      "text": "Su ubicación se usa para ver si puede usar pantalones cortos, también puede optar por ingresar manualmente una ubicación",
+      "manual": "Ingrese la ubicación manualmente",
+      "automatic": "Permitir ubicación"
+    },
+    "_ask_location_sheet": {
+      "title": "Ingresa tu ubicación",
+      "text": "Ha elegido ingresar una ubicación manual. Si no lo desea, ¡siempre puede optar por una ubicación automática!",
+      "enter_location": "Introduce una ubicación",
+      "automatic": "Ubicación automática",
+      "continue": "Continuar"
+    },
+    "_url_launcher_sheet": {
+      "title": "¡NÓTESE BIEN!",
+      "text": "Será redirigido a su navegador. \n\n Esto puede tardar unos pocos segundos.",
+      "open": "Enlace abierto",
+      "close": "Cerca"
+    },
+    "_filter_information_sheet": {
+      "title": "Información sobre filtros",
+      "text": "Si abre esta aplicación, sin duda le han preguntado si puede usar pantalones cortos hoy. Pero, ¿en qué se basa esto realmente? \n\n En primer lugar se mira la temperatura, con el filtro medio debe ser superior a los 15 grados centígrados. \n\n También nos fijamos en la probabilidad de lluvia, si es inferior al 90%, se llega a la conclusión de que puedes llevar pantalones cortos :)",
+      "close": "Cerca"
+    }
+  },
+  "_screens": {
+    "_home_screen": {
+      "title": "¿Puedo usar pantalones cortos hoy?",
+      "rain_chance": "{chance} % de probabilidad de lluvia",
+      "now": "Ahora",
+      "daily_forecast": "Pronóstico de 3 días",
+      "_tiles": {
+        "_sunscreen": {
+          "title": "Frotar",
+          "yes": "Sí",
+          "no": "No",
+          "uv_index": "El índice UV es {uv}"
+        },
+        "_temperature": {
+          "title": "Escalofríos",
+          "yes": "Tiempo de pantalones cortos",
+          "no": "Hora de los pantalones largos"
+        }
+      }
+    },
+    "_settings_screen": {
+      "title": "Ajustes",
+      "_filter": {
+        "title": "Grado de sensibilidad",
+        "_values": {
+          "0": "Endeble",
+          "1": "Promedio",
+          "2": "Atrevido",
+          "3": "Leyenda"
+        }
+      },
+      "_theme": {
+        "title": "Tema",
+        "dark": "Oscuro",
+        "light": "Luz"
+      },
+      "_unit": {
+        "title": "Unidad"
+      },
+      "_notifications": {
+        "title": "Notificaciones diarias",
+        "on": "En",
+        "off": "Afuera"
+      },
+      "reset_location": "Restablecer ubicación"
+    }
+  }
+}

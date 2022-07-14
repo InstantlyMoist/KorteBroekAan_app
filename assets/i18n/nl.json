@@ -1,0 +1,153 @@
+{
+  "_easter_egg": {
+    "tap_to_play": "D R U K  O M  T E  S T A R T E N",
+    "score": "Score: {score}",
+    "top_score": "Top score: {topscore}"
+  },
+  "_notification": {
+    "title": "Kan je vandaag een korte broek aan?",
+    "subtitle": "Open de app en kom erachter"
+  },
+  "_forecasts": {
+    "1000": "Zonnig",
+    "1003": "Deels bewolkt",
+    "1006": "Bewolkt",
+    "1009": "Bewolkt",
+    "1030": "Nevelig",
+    "1063": "Onregelmatige regen mogelijk",
+    "1066": "Onregelmatige sneeuw mogelijk",
+    "1069": "Onregelmatige natte sneeuw mogelijk",
+    "1072": "Onregelmatige bevroren motregen mogelijk",
+    "1087": "Onweersbuien mogelijk",
+    "1114": "Sneeuw",
+    "1117": "Sneeuwstorm",
+    "1135": "Mist",
+    "1147": "Bevroren mist",
+    "1150": "Onregelmatige lichte motregen",
+    "1153": "Lichte motregen",
+    "1168": "Bevroren motregen",
+    "1171": "Heftige bevroren motregen",
+    "1180": "Onregelmatige lichte regen",
+    "1183": "Lichte regen",
+    "1186": "Af en toe matige regen",
+    "1189": "Matige regen",
+    "1192": "Af en toe heftige regen",
+    "1195": "Heftige regen",
+    "1198": "Licht bevroren regen",
+    "1201": "Matig of zware bevroren regen",
+    "1204": "Lichte ijzel",
+    "1207": "Matig of zware ijzel",
+    "1210": "Onregelmatige lichte sneeuw",
+    "1213": "Lichte sneeuw",
+    "1216": "Onregelmatige matige sneeuw",
+    "1219": "Matige sneeuw",
+    "1222": "Onregelmatige zware sneeuw",
+    "1225": "Zware sneeuw",
+    "1237": "Hagel",
+    "1240": "Lichte regenbui",
+    "1243": "Matig of zware regenbui",
+    "1246": "Heftige regenbui",
+    "1249": "Lichte natte sneeuw",
+    "1252": "Matig of zware natte sneeuw",
+    "1255": "Lichte sneeuwbui",
+    "1258": "Matig of zware sneeuwbui",
+    "1261": "Lichte hagelbui",
+    "1264": "Matig of zware hagelbui",
+    "1273": "Onregelmatige lichte regen met bliksem",
+    "1276": "Matig of zware regen met bliksem",
+    "1279": "Onregelmatige lichte sneeuw met bliksem",
+    "1282": "Matig of zware sneeuw met bliksem"
+  },
+  "_days": {
+    "today": "Vandaag",
+    "tomorrow": "Morgen",
+    "day_after_tomorrow": "Overmorgen"
+  },
+  "_sheets": {
+    "_uv_index_sheet": {
+      "title": "UV-index",
+      "text": "Zonkracht wordt uitgedrukt in waarden 0-16. Hieronder worden de effecten van diverse zonkrachten beschreven.\n\n1-2 : Lage zonkracht, u kunt veilig buiten komen zonder bescherming\n\n3-7: Middelmatige zonkracht, zoek schaduw op tijdens de middag en smeer je in\n\n8-11: Zeer hoge zonkracht, ga niet naar buiten tijdens te middag. Insmeren is absoluut noodzakelijk\n\n11-16: Exteme zonkracht, ga niet naar buiten in de middag. Insmeren is noodzakelijk, je verbrandt zeer snel"
+    },
+    "_location_type_sheet": {
+      "title": "Mogen we je locatie weten?",
+      "text": "Jouw locatie wordt gebruikt om te kijken of je een korte broek aan kunt doen, je kunt er ook voor kiezen handmatig een locatie in te voeren",
+      "manual": "Locatie handmatig invoeren",
+      "automatic": "Locatie toestaan"
+    },
+    "_ask_location_sheet": {
+      "title": "Voer je locatie in",
+      "text": "Je hebt gekozen om een handmatige locatie in te voeren. Is dit niet gewenst, dan kun je altijd nog kiezen voor een automatische locatie!",
+      "enter_location": "Voer een locatie in",
+      "automatic": "Automatische locatie",
+      "continue": "Ga verder"
+    },
+    "_url_launcher_sheet": {
+      "title": "Let op!",
+      "text": "Je wordt naar je browser doorgestuurd.\n\nDit kan een aantal seconden duren.",
+      "open": "Open link",
+      "close": "Sluiten"
+    },
+    "_filter_information_sheet": {
+      "title": "Informatie over filters",
+      "text": "Als je deze app opent heb je ongetwijfeld de vraag gehad of je een korte broek aan kunt vandaag. Maar waarop wordt dit eigenlijk gebaseerd?\n\nAllereerst wordt er gekeken naar de temperatuur, bij het gemiddelde filter moet deze hoger liggen dan 15 graden celcius.\n\nOok wordt er gekeken naar de regenkans, als deze kleiner is dan 90% wordt de conclusie getrokken dat je een korte broek aan kunt doen :)",
+      "close": "Sluiten"
+    }
+  },
+  "_screens": {
+    "_home_screen": {
+      "title": "Kan ik een korte broek aan?",
+      "rain_chance": "{chance}% regenkans",
+      "now": "Nu",
+      "daily_forecast": "3 daagse voorspelling",
+      "_graph": {
+        "title": "Doe je vandaag een korte broek aan?",
+        "text": "Stem hieronder wat voor kledingstuk je vandaag aandoet. Daarna heb je de mogelijkheid te zien wat andere mensen hebben gestemd!",
+        "yes": "Korte broek",
+        "no": "Lange broek"
+      },
+      "_tiles": {
+        "_sunscreen": {
+          "title": "Insmeren",
+          "yes": "Ja",
+          "no": "Nee",
+          "uv_index": "De UV index is {uv}"
+        },
+        "_temperature": {
+          "title": "Gevoelstemperatuur",
+          "yes": "Tijd voor een korte broek",
+          "no": "Tijd voor een lange broek"
+        }
+      }
+    },
+    "_share": {
+      "yes": "Je kunt vandaag in {location} een korte broek aan! Het wordt hier vandaag {temp}°C met een regenkans van {chance}%\n\nDownload nu de app op www.kortebroekaan.nl",
+      "bo": "Je kunt vandaag in {location} helaas geen korte broek aan... Het wordt hier vandaag {temp}°C met een regenkans van {chance}%\n\nDownload nu de app op www.kortebroekaan.nl"
+    },
+    "_settings_screen": {
+      "title": "Instellingen",
+      "_filter": {
+        "title": "Gevoeligheidsgraad",
+        "_values": {
+          "0": "Watje",
+          "1": "Gemiddeld",
+          "2": "Gedurfd",
+          "3": "Legende"
+        }
+      },
+      "_theme": {
+        "title": "Thema",
+        "dark": "Donker",
+        "light": "Licht"
+      },
+      "_unit": {
+        "title": "Eenheid"
+      },
+      "_notifications": {
+        "title": "Dagelijkse notificaties",
+        "on": "Aan",
+        "off": "Uit"
+      },
+      "reset_location": "Stel locatie opnieuw in"
+    }
+  }
+}
