@@ -2,7 +2,8 @@
   "_easter_egg": {
     "tap_to_play": "D R U K  O M  T E  S T A R T E N",
     "score": "Score: {score}",
-    "top_score": "Top score: {topscore}"
+    "top_score": "Top score: {topscore}",
+    "back": "Terug"
   },
   "_notification": {
     "title": "Kan je vandaag een korte broek aan?",
@@ -64,6 +65,15 @@
     "day_after_tomorrow": "Overmorgen"
   },
   "_sheets": {
+    "_purchase_ok_sheet": {
+      "title": "Betaling geslaagd!",
+      "text": "Je kunt nu genieten van een advertentie-vrije ervaring!",
+      "close": "Oke!"
+    },
+    "_purchase_failed_sheet":{
+      "title": "Er is iets fout gegaan",
+      "text": "Helaas is de aankoop mislukt, probeer het later opnieuw."
+    },
     "_uv_index_sheet": {
       "title": "UV-index",
       "text": "Zonkracht wordt uitgedrukt in waarden 0-16. Hieronder worden de effecten van diverse zonkrachten beschreven.\n\n1-2 : Lage zonkracht, u kunt veilig buiten komen zonder bescherming\n\n3-7: Middelmatige zonkracht, zoek schaduw op tijdens de middag en smeer je in\n\n8-11: Zeer hoge zonkracht, ga niet naar buiten tijdens te middag. Insmeren is absoluut noodzakelijk\n\n11-16: Exteme zonkracht, ga niet naar buiten in de middag. Insmeren is noodzakelijk, je verbrandt zeer snel"
@@ -147,7 +157,9 @@
         "on": "Aan",
         "off": "Uit"
       },
-      "reset_location": "Stel locatie opnieuw in"
+      "reset_location": "Stel locatie opnieuw in",
+      "remove_ads": "Verwijder advertenties",
+      "restore_purchases": "Aankopen herstellen"
     }
   }
 }

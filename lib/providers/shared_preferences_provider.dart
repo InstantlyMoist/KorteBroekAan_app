@@ -14,6 +14,8 @@ class SharedPreferencesProvider {
   static bool celcius = true;
   static bool notifications = true;
 
+  static bool removeAdsPurchased = false;
+
   static bool adShown = false;
 
   static DateTime? canVoteIn;
@@ -48,6 +50,9 @@ class SharedPreferencesProvider {
     if (_preferences.containsKey("topScore")) {
       topScore = _preferences.getInt("topScore")!;
     }
+    if (_preferences.containsKey("removeAdsPurchased")) {
+      removeAdsPurchased = _preferences.getBool("removeAdsPurchased")!;
+    }
   }
 
   static void removeLocationSettings() {
@@ -73,6 +78,7 @@ class SharedPreferencesProvider {
     _preferences.setBool('notifications', notifications);
     _preferences.setInt("canVoteIn", canVoteIn!.millisecondsSinceEpoch);
     _preferences.setInt("topScore", topScore);
+    _preferences.setBool("removeAdsPurchased", removeAdsPurchased);
   }
 
   static void setLocationType(LocationType type) {

@@ -11,6 +11,7 @@ import 'package:kortebroekaan/providers/shared_preferences_provider.dart';
 import 'package:kortebroekaan/screens/home_screen.dart';
 import 'package:kortebroekaan/utils/image_grayscaler.dart';
 import 'package:kortebroekaan/utils/screen_pusher.dart';
+import 'package:kortebroekaan/widgets/buttons/custom_button.dart';
 import 'package:kortebroekaan/widgets/containers/game_barrier.dart';
 import 'package:kortebroekaan/widgets/text/h1.dart';
 import 'package:kortebroekaan/widgets/text/p.dart';
@@ -292,6 +293,23 @@ class _GameScreenState extends State<GameScreen> {
                           color: AppColors.shortPantsLightColor(widget
                               .weatherModel.dailyForecast[0]
                               .shortPants()),
+                        ),
+                        if (!_started) Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 32.0, vertical: 16),
+                          child: CustomButton(
+                            text: translate("_easter_egg.back"),
+                            buttonColor: AppColors.shortPantsLightColor(widget
+                                .weatherModel.dailyForecast[0]
+                                .shortPants()),
+                            textColor: AppColors.shortPantsDarkColor(widget
+                                .weatherModel.dailyForecast[0]
+                                .shortPants()),
+                            onPressed: () => ScreenPusher.pushScreen(
+                                context,
+                                HomeScreen(weatherModel: widget.weatherModel),
+                                true),
+                          ),
                         ),
                       ],
                     ),

@@ -4,14 +4,12 @@ import 'package:kortebroekaan/widgets/text/p.dart';
 class SettingsButton extends StatelessWidget {
   SettingsButton(
       {Key? key,
-      required this.title,
       required this.buttonText,
       required this.onTap,
       required this.buttonColor,
       required this.textColor})
       : super(key: key);
 
-  String title;
   String buttonText;
   VoidCallback onTap;
   Color buttonColor;
@@ -21,13 +19,7 @@ class SettingsButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        P(
-          text: title,
-          color: textColor,
-        ),
-        const SizedBox(
-          height: 8,
-        ),
+        const SizedBox(height: 16),
         GestureDetector(
           onTap: onTap,
           child: Container(

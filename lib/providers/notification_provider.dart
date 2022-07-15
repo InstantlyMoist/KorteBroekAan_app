@@ -36,7 +36,6 @@ class NotificationProvider {
   }
 
   static void register() {
-    print('Registering for notifications');
     unregister();
     flutterLocalNotificationsPlugin.zonedSchedule(
       0,
@@ -67,7 +66,6 @@ class NotificationProvider {
 
   static TZDateTime _nextMorning() {
     DateTime now = DateTime.now();
-    print("The time now is $now");
     TZDateTime nowTz = TZDateTime.now(local);
 
     int hour = 7;

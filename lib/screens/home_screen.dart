@@ -220,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen>
                                 .then((value) {
                               setState(() {});
                               if (_ad != null) {
-                                if (!SharedPreferencesProvider.adShown) {
+                                if (!SharedPreferencesProvider.adShown && !SharedPreferencesProvider.removeAdsPurchased) {
                                   SharedPreferencesProvider.adShown = true;
                                   _ad!.show();
                                 }
