@@ -1,0 +1,158 @@
+{
+  "_easter_egg": {
+    "tap_to_play": "T A P  T O  P L A Y",
+    "score": "Score: {score}",
+    "top_score": "Top score: {topscore}",
+    "back": "Back"
+  },
+  "_notification": {
+    "title": "Can you wear shorts today?",
+    "subtitle": "Open the app to find out"
+  },
+  "_forecasts": {
+    "1000": "Sunny",
+    "1003": "Partly cloudy",
+    "1006": "Overcast",
+    "1009": "Overcast",
+    "1030": "Foggy",
+    "1063": "Possibility of showers",
+    "1066": "Possibility of irregular snowfall",
+    "1069": "Possibility of irregular wet snow",
+    "1072": "Possibility of irregular freezing drizzle",
+    "1087": "Possibility of thunderstorms",
+    "1114": "Snow",
+    "1117": "Blizzard",
+    "1135": "Fog",
+    "1147": "Rime ice",
+    "1150": "Irregular light drizzle",
+    "1153": "Light drizzle",
+    "1168": "Freezing drizzle",
+    "1171": "Heavy freezing drizzle",
+    "1180": "Irregular light rain",
+    "1183": "Light rain",
+    "1186": "Occaisional moderate rain",
+    "1189": "Moderate rain",
+    "1192": "Occaisional heavy rain",
+    "1195": "Heavy rain",
+    "1198": "Light freezing rain",
+    "1201": "Moderate to heavy freezing rain",
+    "1204": "Light black ice",
+    "1207": "Moderate to heavy black ice",
+    "1210": "Irregular Light snow",
+    "1213": "Light snow",
+    "1216": "Irregular moderate snow",
+    "1219": "Matige snow",
+    "1222": "Irregular heavy snow",
+    "1225": "Zware snow",
+    "1237": "Hail",
+    "1240": "Light showers",
+    "1243": "Moderate to heavy showers",
+    "1246": "Heavy showers",
+    "1249": "Light wet snow",
+    "1252": "Moderate to heavy wet snow",
+    "1255": "Light snowfall",
+    "1258": "Moderate to heavy snowfall",
+    "1261": "Light hail",
+    "1264": "Moderate to heavy hailstorm",
+    "1273": "Irregular thundershowers",
+    "1276": "Moderate to heavy thunderstorms",
+    "1279": "Irregular Light thundersnow",
+    "1282": "Moderate to heavy thundersnow"
+  },
+  "_days": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "day_after_tomorrow": "Day after tomorrow"
+  },
+  "_sheets": {
+    "_uv_index_sheet": {
+      "title": "UV-index",
+      "text": "Solar power is defined on a scale from 0 to 16. The effects of various solar powers are listed below.\n\n1-2 : Weak solar power, you can safely sit outside without any protection\n\n3-7: Average solar power, use sunblock and seek shade in the afternoon\n\n8-11: Very high solar power, avoid going outside in the afternoon. Use sunscreen\n\n11-16: Exteme solar power, do not go outside in the afternoon. Use sunscreen, sunburn will occur quickly"
+    },
+    "_location_type_sheet": {
+      "title": "Will you share your location with us?",
+      "text": "Your location will be used to determine whether or not you can wear shorts, you can opt to manually enter a location",
+      "manual": "Manually enter location",
+      "automatic": "Allow sharing location"
+    },
+    "_ask_location_sheet": {
+      "title": "Please enter your location",
+      "text": "You have chosen to manually select a location. You can allways chose to automatically share your location!",
+      "enter_location": "Enter a location",
+      "automatic": "Automatic location",
+      "continue": "Continue"
+    },
+    "_url_launcher_sheet": {
+      "title": "Pay attention!",
+      "text": "You will be sent to your browser.\n\nThis may take a few seconds.",
+      "open": "Open link",
+      "close": "Close"
+    },
+    "_filter_information_sheet": {
+      "title": "Information on filters",
+      "text": "When opening this app, you have undoutebly wondered whether you can wear shorts, but what determines if you can?\n\nFirst of all the temperature is checked. Using the average filter means that this must be more than 15 degrees celsius.\n\nNext, the chance of rain is checked. If this is less than 90%, it will be concluded that you can wear shorts! :)",
+      "close": "Close"
+    }
+  },
+  "_screens": {
+    "_home_screen": {
+      "title": "Can I wear shorts?",
+      "rain_chance": "{chance}% chance of rain",
+      "now": "Now",
+      "daily_forecast": "3 day forecast",
+      "_graph": {
+        "title": "Are you wearing shorts today?",
+        "text": "Vote here for what you're wearing. After that, you can see what others are wearing!",
+        "yes": "Shorts",
+        "no": "Long trousers"
+      },
+      "_tiles": {
+        "_sunscreen": {
+          "title": "Use sunscreen",
+          "yes": "Yes",
+          "no": "No",
+          "uv_index": "The UV index is {uv}"
+        },
+        "_temperature": {
+          "title": "Windchill",
+          "yes": "Time for shorts",
+          "no": "Time for Long trousers"
+        }
+      }
+    },
+    "_share": {
+      "yes": "You can wear shorts in {location} today! The expected temperature today will be {temp}°C with a {chance}% chance of rain",
+      "bo": "Sadly, you cannot wear shorts in {location} today...  The expected temperature today will be {temp}°C with a {chance}% chance of rain"
+    },
+    "_settings_screen": {
+      "title": "Settings",
+      "_filter": {
+        "title": "Sensitivity",
+        "_values": {
+          "0": "Weakling",
+          "1": "Average",
+          "2": "Daring",
+          "3": "Legend"
+        }
+      },
+      "_theme": {
+        "title": "Theme",
+        "dark": "Dark",
+        "light": "Light"
+      },
+      "_unit": {
+        "title": "Unit"
+      },
+      "_notifications": {
+        "title": "Daily notifications",
+        "on": "On",
+        "off": "Off"
+      },
+      "language": "Language:",
+      "reset_location": "Reset location",
+      "remove_ads": "Remove ads",
+      "restore_purchases": "Restore purchases",
+      "set_notification_time": "Set notification time (Current: {current})"
+    }
+  }
+}
