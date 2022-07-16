@@ -47,6 +47,8 @@ class _HomeScreenState extends State<HomeScreen>
   late AnimationController _shakeController;
 
   InterstitialAd? _ad;
+  BannerAd? _bannerAd;
+  bool _bannerAdLoaded = false;
 
   final ScrollController _controller = ScrollController();
 
@@ -58,7 +60,8 @@ class _HomeScreenState extends State<HomeScreen>
   int _presses = 0;
 
   void _shake() {
-    if (_lastPress.millisecondsSinceEpoch < DateTime.now().millisecondsSinceEpoch - 1000) {
+    if (_lastPress.millisecondsSinceEpoch <
+        DateTime.now().millisecondsSinceEpoch - 1000) {
       _lastPress = DateTime.now();
       return;
     }
@@ -69,7 +72,8 @@ class _HomeScreenState extends State<HomeScreen>
       Vibrate.vibrate();
     }
     if (_presses > 10) {
-      ScreenPusher.pushScreen(context, GameScreen(weatherModel: widget.weatherModel), true);
+      ScreenPusher.pushScreen(
+          context, GameScreen(weatherModel: widget.weatherModel), true);
       // Go to a new screen
     }
   }
@@ -92,6 +96,21 @@ class _HomeScreenState extends State<HomeScreen>
         },
       ),
     );
+    _bannerAd = BannerAd(
+      //adUnitId: 'ca-app-pub-1364717858891314/6730862092',
+      adUnitId: 'ca-app-pub-3940256099942544/6300978111',
+      size: AdSize.fullBanner,
+      request: const AdRequest(),
+      listener: BannerAdListener(onAdLoaded: (ad) {
+        setState(() {
+          _bannerAdLoaded = true;
+        });
+      }),
+    );
+
+    if (_bannerAd != null && !SharedPreferencesProvider.removeAdsPurchased) {
+      _bannerAd!.load();
+    }
 
     _counterSubscription = DatabaseProvider.counterRef.onValue.listen((event) {
       setState(() {
@@ -220,7 +239,9 @@ class _HomeScreenState extends State<HomeScreen>
                                 .then((value) {
                               setState(() {});
                               if (_ad != null) {
-                                if (!SharedPreferencesProvider.adShown && !SharedPreferencesProvider.removeAdsPurchased) {
+                                if (!SharedPreferencesProvider.adShown &&
+                                    !SharedPreferencesProvider
+                                        .removeAdsPurchased) {
                                   SharedPreferencesProvider.adShown = true;
                                   _ad!.show();
                                 }
@@ -340,6 +361,19 @@ class _HomeScreenState extends State<HomeScreen>
                           shortPants:
                               widget.weatherModel.dailyForecast[0].shortPants(),
                         ),
+                        const SizedBox(
+                          height: 16,
+                        ),
+                        if (_bannerAd != null &&
+                            !SharedPreferencesProvider.removeAdsPurchased && _bannerAdLoaded)
+                          Container(
+                            alignment: Alignment.center,
+                            width: _bannerAd!.size.width.toDouble(),
+                            height: _bannerAd!.size.height.toDouble(),
+                            child: AdWidget(
+                              ad: _bannerAd!,
+                            ),
+                          ),
                         const SizedBox(
                           height: 16,
                         ),
