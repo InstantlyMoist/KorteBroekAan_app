@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_translate/flutter_translate.dart';
+import 'package:kortebroekaan/providers/shared_preferences_provider.dart';
 import 'package:timezone/data/latest.dart';
 import 'package:timezone/timezone.dart';
 
@@ -68,9 +68,8 @@ class NotificationProvider {
     DateTime now = DateTime.now();
     TZDateTime nowTz = TZDateTime.now(local);
 
-    int hour = 7;
-
-    TZDateTime schedule = TZDateTime.utc(now.year, now.month, now.day, hour, 0);
+    TZDateTime schedule = TZDateTime.utc(now.year, now.month, now.day, SharedPreferencesProvider.notificationTime.hour - 2, SharedPreferencesProvider.notificationTime.minute);
+    print("Schedule: $schedule");
     return schedule;
   }
 }

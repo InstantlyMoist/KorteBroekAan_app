@@ -7,6 +7,7 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 import 'package:intl/date_symbol_data_file.dart';
 import 'package:intl/intl.dart';
 import 'package:kortebroekaan/constants/app_colors.dart';
@@ -48,6 +49,8 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void _load() async {
+    changeLocale(context, SharedPreferencesProvider.language);
+
     var jsonText =
         await rootBundle.loadString('assets/splash_screen_hints.json');
     facts = jsonDecode(jsonText);

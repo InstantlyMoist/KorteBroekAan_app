@@ -157,9 +157,11 @@
         "on": "Aan",
         "off": "Uit"
       },
+      "language": "Taal:",
       "reset_location": "Stel locatie opnieuw in",
       "remove_ads": "Verwijder advertenties",
-      "restore_purchases": "Aankopen herstellen"
+      "restore_purchases": "Aankopen herstellen",
+      "set_notification_time": "Stel notificatietijd in (Huidig: {current})"
     }
   }
 }

@@ -384,6 +384,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.6.0"
+  language_picker:
+    dependency: "direct main"
+    description:
+      name: language_picker
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.1"
   lints:
     dependency: transitive
     description:
@@ -545,6 +552,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.2.4"
+  recase:
+    dependency: transitive
+    description:
+      name: recase
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0"
   rename:
     dependency: transitive
     description:

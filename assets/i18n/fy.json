@@ -1,4 +1,14 @@
 {
+  "_easter_egg": {
+    "tap_to_play": "D R U K  O M  T E  B E G J I N N E N",
+    "score": "Skoare: {score}",
+    "top_score": "Hege skoare: {topscore}",
+    "back": "Efterkant"
+  },
+  "_notification": {
+    "title": "Kin ik hjoed in koarte broek oan?",
+    "subtitle": "Iepenje de app en fyn út"
+  },
   "_forecasts": {
     "1000": "Sinnich",
     "1003": "Partlik beset",
@@ -55,6 +65,19 @@
     "day_after_tomorrow": "Oermoarn"
   },
   "_sheets": {
+    "_purchase_ok_sheet": {
+      "title": "Betelling slagge!",
+      "text": "Jo kinne no genietsje fan in advertinsjefrije ûnderfining!",
+      "close": "Okee!"
+    },
+    "_purchase_failed_sheet":{
+      "title": "Der is wat misgien",
+      "text": "Spitigernôch mislearre de oankeap, besykje it letter nochris."
+    },
+    "_uv_index_sheet": {
+      "title": "UV yndeks",
+      "text": "Sinnekrêft wurdt útdrukt yn wearden 0-16. De effekten fan ferskate sinnekrêften wurde hjirûnder beskreaun.\n\n1-2: Leech sinnekrêft, jo kinne feilich nei bûten gean sûnder beskerming\n\n3-7: Medium sinne krêft, sykje skaad yn 'e middei en tapasse\n\n8-11: Hiel hege sinnekrêft, gean middeis net nei bûten. Lubrication is perfoarst nedich\n\n11-16: Ekstreme sinne krêft, net útgean yn 'e middei. Smering is nedich, jo ferbaarne hiel fluch"
+    },
     "_location_type_sheet": {
       "title": "Meie we dyn lokaasje witte?",
       "text": "Dyn lokaasje wurdt brûkt om te sjen oftst in koarte broek oan kinst, kinst der ek foar kieze om sels in lokaasje yn te fieren",
@@ -106,6 +129,10 @@
         }
       }
     },
+    "_share": {
+      "yes": "Jo kinne hjoed koarte broek drage yn {location}! Hjoed wurdt it {temp}°C mei in kâns op rein fan {chance}%\n\nDownload de app no \u200B\u200Bop www.kortebroekaan.nl",
+      "bo": "Spitigernôch kinne jo hjoed gjin koarte broek drage yn {location}... It wurdt hjir hjoed {temp}°C mei in kâns op rein fan {chance}%\n\nDownload de app no \u200B\u200Bop www.kortebroekaan.nl"
+    },
     "_settings_screen": {
       "title": "Ynstellings",
       "_filter": {
@@ -130,7 +157,11 @@
         "on": "Oan",
         "off": "Út"
       },
-      "reset_location": "Stel lokaasje op 'e nij yn"
+      "language": "Taal:",
+      "reset_location": "Stel lokaasje op 'e nij yn",
+      "remove_ads": "Advertinsjes fuorthelje",
+      "restore_purchases": "Oankeapen herstelle",
+      "set_notification_time": "Stel notifikaasje tiid yn (Aktueel: {current})"
     }
   }
 }

@@ -2,7 +2,6 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:kortebroekaan/providers/in_app_purchases_provider.dart';
 import 'package:kortebroekaan/providers/shared_preferences_provider.dart';
@@ -18,11 +17,13 @@ void main() async {
 
   await SharedPreferencesProvider.load();
 
+  SharedPreferencesProvider.languages = ['nl', 'en', 'fy'];
+
   await InAppPurchasesProvider.init();
 
   var delegate = await LocalizationDelegate.create(
     fallbackLocale: "nl",
-    supportedLocales: ['nl', 'es', 'fy'],
+    supportedLocales: SharedPreferencesProvider.languages,
   );
 
   await Firebase.initializeApp(

@@ -1,11 +1,10 @@
 import 'dart:async';
 
-import 'package:firebase_database/ui/utils/stream_subscriber_mixin.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:kortebroekaan/providers/shared_preferences_provider.dart';
 
 class InAppPurchasesProvider {
-  //late StreamSubscription<List<PurchaseDetails>> _subscription;
+
   static late Stream _stream;
   static List<ProductDetails> _products = [];
 
@@ -18,6 +17,8 @@ class InAppPurchasesProvider {
     _stream = InAppPurchase.instance.purchaseStream;
 
     print("InAppPurchasesProvider.init");
+
+    await InAppPurchase.instance.isAvailable();
 
     const Set<String> _kIds = {'remove_ads'};
     ProductDetailsResponse response =

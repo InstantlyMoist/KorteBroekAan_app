@@ -1,8 +1,13 @@
+import 'package:flutter/material.dart';
 import 'package:kortebroekaan/constants/location_type.dart';
 import 'package:kortebroekaan/providers/notification_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesProvider {
+
+  static late List<String> languages;
+  static String language = "nl";
+
   static late SharedPreferences _preferences;
 
   static LocationType? locationType;
@@ -19,6 +24,7 @@ class SharedPreferencesProvider {
   static bool adShown = false;
 
   static DateTime? canVoteIn;
+  static TimeOfDay notificationTime = const TimeOfDay(hour: 07, minute: 00);
 
   static Future<void> load() async {
     _preferences = await SharedPreferences.getInstance();
@@ -53,6 +59,17 @@ class SharedPreferencesProvider {
     if (_preferences.containsKey("removeAdsPurchased")) {
       removeAdsPurchased = _preferences.getBool("removeAdsPurchased")!;
     }
+    if (_preferences.containsKey("notificationTime")) {
+      String timeBuffer = _preferences.getString("notificationTime")!;
+      List<String> timeBufferList = timeBuffer.split(":");
+      notificationTime = TimeOfDay(
+        hour: int.parse(timeBufferList[0]),
+        minute: int.parse(timeBufferList[1]),
+      );
+    }
+    if (_preferences.containsKey("language")) {
+      language = _preferences.getString("language")!;
+    }
   }
 
   static void removeLocationSettings() {
@@ -79,6 +96,8 @@ class SharedPreferencesProvider {
     _preferences.setInt("canVoteIn", canVoteIn!.millisecondsSinceEpoch);
     _preferences.setInt("topScore", topScore);
     _preferences.setBool("removeAdsPurchased", removeAdsPurchased);
+    _preferences.setString("notificationTime", "${notificationTime.hour}:${notificationTime.minute}");
+    _preferences.setString("language", language);
   }
 
   static void setLocationType(LocationType type) {
