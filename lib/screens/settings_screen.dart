@@ -413,6 +413,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               widget.weatherModel.dailyForecast[0].shortPants(),
                             ),
                           ),
+                          const SizedBox(
+                            width: 16,
+                          ),
+                          SvgButton(
+                            assetName: "assets/icons/tiktok.svg",
+                            url: "https://www.tiktok.com/@kortebroekaan_nl",
+                            lightColor: AppColors.shortPantsLightColor(
+                              widget.weatherModel.dailyForecast[0].shortPants(),
+                            ),
+                            darkColor: AppColors.shortPantsDarkColor(
+                              widget.weatherModel.dailyForecast[0].shortPants(),
+                            ),
+                          ),
                         ],
                       ),
                     ],

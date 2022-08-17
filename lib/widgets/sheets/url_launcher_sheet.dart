@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
-import 'package:kortebroekaan/constants/app_colors.dart';
 import 'package:kortebroekaan/utils/url_launcher.dart';
 import 'package:kortebroekaan/widgets/buttons/custom_button.dart';
 import 'package:kortebroekaan/widgets/text/h1.dart';

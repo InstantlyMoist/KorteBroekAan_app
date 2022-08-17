@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:kortebroekaan/models/short_pants_data.dart';
 
 class DatabaseProvider {
+
   static late DatabaseReference counterRef;
 
   static List<ShortPantsData> yesData = [];
@@ -14,10 +15,8 @@ class DatabaseProvider {
 
     DataSnapshot snapshot = await counterRef.get();
     List<DataSnapshot> children = snapshot.children.toList();
-    print(children);
     children =
         children.sublist(children.length - 7 > 0 ? children.length - 7 : 0);
-    print(children);
     for (DataSnapshot ds in children) {
       String key = ds.key!;
       List<DataSnapshot> timeSnapshot = ds.children.toList();
@@ -37,11 +36,12 @@ class DatabaseProvider {
   }
 
   static Future<void> increment(bool shortPants) async {
-    DateFormat format = DateFormat("yyyy-MM-dd");
+    DateFormat format = DateFormat("yyyy-MM-dd", "nl_NL");
     String date = format.format(DateTime.now());
 
     await counterRef.child(date).child(shortPants ? "yes" : "no").set(
           ServerValue.increment(1),
         );
   }
+
 }

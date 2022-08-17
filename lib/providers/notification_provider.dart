@@ -23,7 +23,7 @@ class NotificationProvider {
               String? body,
               String? payload,
             ) async {
-              print("Received notifcation");
+
             });
 
     InitializationSettings initializationSettings = InitializationSettings(
@@ -69,7 +69,6 @@ class NotificationProvider {
     TZDateTime nowTz = TZDateTime.now(local);
 
     TZDateTime schedule = TZDateTime.utc(now.year, now.month, now.day, SharedPreferencesProvider.notificationTime.hour - 2, SharedPreferencesProvider.notificationTime.minute);
-    print("Schedule: $schedule");
     return schedule;
   }
 }

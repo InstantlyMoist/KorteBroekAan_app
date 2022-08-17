@@ -13,9 +13,7 @@ import 'package:kortebroekaan/utils/image_grayscaler.dart';
 import 'package:kortebroekaan/utils/screen_pusher.dart';
 import 'package:kortebroekaan/widgets/buttons/custom_button.dart';
 import 'package:kortebroekaan/widgets/containers/game_barrier.dart';
-import 'package:kortebroekaan/widgets/text/h1.dart';
 import 'package:kortebroekaan/widgets/text/p.dart';
-import 'package:share_plus/share_plus.dart';
 
 class GameScreen extends StatefulWidget {
   GameScreen({Key? key, required this.weatherModel}) : super(key: key);

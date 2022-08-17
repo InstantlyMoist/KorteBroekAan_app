@@ -14,4 +14,13 @@ class WeatherForecastDailyModel {
 
   String temperatureParsedString() =>
       "${(SharedPreferencesProvider.celcius ? temperature : temperature * 1.8 + 32).toStringAsFixed(1)}°${SharedPreferencesProvider.celcius ? 'C' : 'F'}";
+
+  WeatherForecastDailyModel.fromJson(Map<String, dynamic> json)
+      : temperature = json['maxtemp_c'].toDouble(),
+        rainChance = json['daily_chance_of_rain'].toDouble();
+
+  Map<String, dynamic> toJson() => {
+        'maxtemp_c': temperature,
+        'daily_chance_of_rain': rainChance,
+      };
 }

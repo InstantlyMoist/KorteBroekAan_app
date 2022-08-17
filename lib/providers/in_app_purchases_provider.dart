@@ -16,8 +16,6 @@ class InAppPurchasesProvider {
   static Future<void> init() async {
     _stream = InAppPurchase.instance.purchaseStream;
 
-    print("InAppPurchasesProvider.init");
-
     await InAppPurchase.instance.isAvailable();
 
     const Set<String> _kIds = {'remove_ads'};
@@ -25,12 +23,6 @@ class InAppPurchasesProvider {
         await InAppPurchase.instance.queryProductDetails(_kIds);
 
     _products = response.productDetails;
-
-    print("InAppPurchasesProvider.init: _products: $_products");
-    for (ProductDetails product in _products) {
-      print(
-          "InAppPurchasesProvider.init: product: ${product.title} ${product.price}");
-    }
 
     _stream.listen((list) async {
       for (PurchaseDetails purchase in list) {

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:kortebroekaan/constants/app_colors.dart';
 import 'package:kortebroekaan/models/weather_forecast_daily_model.dart';
-import 'package:kortebroekaan/models/weather_model.dart';
 import 'package:kortebroekaan/widgets/text/p.dart';
 
 class DailyForecastEntry extends StatelessWidget {

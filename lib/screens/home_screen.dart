@@ -97,8 +97,7 @@ class _HomeScreenState extends State<HomeScreen>
       ),
     );
     _bannerAd = BannerAd(
-      //adUnitId: 'ca-app-pub-1364717858891314/6730862092',
-      adUnitId: 'ca-app-pub-3940256099942544/6300978111',
+      adUnitId: 'ca-app-pub-1364717858891314/6730862092',
       size: AdSize.fullBanner,
       request: const AdRequest(),
       listener: BannerAdListener(onAdLoaded: (ad) {

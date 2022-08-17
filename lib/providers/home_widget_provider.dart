@@ -8,7 +8,6 @@ import 'package:kortebroekaan/providers/weather_provider.dart';
 import 'package:workmanager/workmanager.dart';
 
 void callbackDispatcher() {
-  print("Callback dispatcher ${DateTime.now()}");
   Workmanager().executeTask((taskName, inputData) async {
 //final now = DateTime.now();
     await SharedPreferencesProvider.load();
@@ -31,13 +30,15 @@ class HomeWidgetProvider {
     // Get platform
     if (Platform.isIOS) return;
     await Workmanager().initialize(callbackDispatcher,
-        isInDebugMode: false); // TODO: Change to false
+        isInDebugMode: false);
+    Workmanager().cancelAll();
     Workmanager().registerPeriodicTask(
-      "1",
+      "kortebroekaan_widget_update",
       'widgetBackgroundUpdate',
       inputData: {
         'location': location,
       },
+      frequency: const Duration(hours: 12),
       existingWorkPolicy: ExistingWorkPolicy.replace,
       constraints: Constraints(
           networkType: NetworkType.connected, requiresCharging: false),

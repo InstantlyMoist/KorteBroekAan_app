@@ -1,15 +1,10 @@
 import 'dart:convert';
-import 'dart:developer';
 import 'dart:math';
 
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_translate/flutter_translate.dart';
-import 'package:intl/date_symbol_data_file.dart';
-import 'package:intl/intl.dart';
 import 'package:kortebroekaan/constants/app_colors.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -28,7 +23,6 @@ import 'package:kortebroekaan/utils/screen_pusher.dart';
 import 'package:kortebroekaan/widgets/sheets/ask_location_sheet.dart';
 import 'package:kortebroekaan/widgets/sheets/location_type_sheet.dart';
 import 'package:kortebroekaan/widgets/text/p.dart';
-import 'package:kortebroekaan/widgets/text/pTiny.dart';
 import 'package:location/location.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -58,6 +52,25 @@ class _SplashScreenState extends State<SplashScreen> {
 
     await dotenv.load(fileName: ".env");
 
+    await AppTrackingTransparency.requestTrackingAuthorization();
+
+    await NotificationProvider.init();
+    SharedPreferencesProvider.notifications
+        ? NotificationProvider.register()
+        : NotificationProvider.unregister();
+
+    await DatabaseProvider.init();
+
+    if (SharedPreferencesProvider.model != null) {
+      HomeWidgetProvider.init(SharedPreferencesProvider.model!.cityName);
+      ScreenPusher.pushScreen(
+        context,
+        HomeScreen(weatherModel: SharedPreferencesProvider.model!),
+        true,
+      );
+      return;
+    }
+
     String location =
         await getLocation(); // This returns the location as a string which can be used to get the weather
 
@@ -65,14 +78,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
     WeatherModel weather = await WeatherProvider.getWeather(location);
 
-    await DatabaseProvider.init();
-
-    await AppTrackingTransparency.requestTrackingAuthorization();
-
-    await NotificationProvider.init();
-    SharedPreferencesProvider.notifications
-        ? NotificationProvider.register()
-        : NotificationProvider.unregister();
+    SharedPreferencesProvider.model = weather;
+    SharedPreferencesProvider.save();
 
     ScreenPusher.pushScreen(
       context,

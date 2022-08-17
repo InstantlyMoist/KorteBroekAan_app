@@ -17,12 +17,12 @@ void main() async {
 
   await SharedPreferencesProvider.load();
 
-  SharedPreferencesProvider.languages = ['nl', 'en', 'fy'];
+  SharedPreferencesProvider.languages = ['nl', 'en', 'fy', 'nl_BR'];
 
   await InAppPurchasesProvider.init();
 
   var delegate = await LocalizationDelegate.create(
-    fallbackLocale: "nl",
+    fallbackLocale: "en",
     supportedLocales: SharedPreferencesProvider.languages,
   );
 

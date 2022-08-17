@@ -1,14 +1,18 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:kortebroekaan/constants/location_type.dart';
+import 'package:kortebroekaan/models/weather_model.dart';
 import 'package:kortebroekaan/providers/notification_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesProvider {
+  static late SharedPreferences _preferences;
+
+  static WeatherModel? model;
 
   static late List<String> languages;
   static String language = "nl";
-
-  static late SharedPreferences _preferences;
 
   static LocationType? locationType;
   static String? location;
@@ -70,6 +74,13 @@ class SharedPreferencesProvider {
     if (_preferences.containsKey("language")) {
       language = _preferences.getString("language")!;
     }
+    if (_preferences.containsKey("model")) {
+      String modelBuffer = _preferences.getString("model")!;
+      WeatherModel buffer = WeatherModel.fromJson(jsonDecode(modelBuffer));
+      if (buffer.createdAt + 1800000 > DateTime.now().millisecondsSinceEpoch) {
+        model = buffer; // Else the model is expired and we don't want it to update
+      }
+    }
   }
 
   static void removeLocationSettings() {
@@ -78,6 +89,8 @@ class SharedPreferencesProvider {
 
     _preferences.remove('locationType');
     _preferences.remove('location');
+
+    _preferences.remove("model"); // Remove the model aswell, as it is no longer valid
 
     save();
   }
@@ -96,8 +109,13 @@ class SharedPreferencesProvider {
     _preferences.setInt("canVoteIn", canVoteIn!.millisecondsSinceEpoch);
     _preferences.setInt("topScore", topScore);
     _preferences.setBool("removeAdsPurchased", removeAdsPurchased);
-    _preferences.setString("notificationTime", "${notificationTime.hour}:${notificationTime.minute}");
+    _preferences.setString("notificationTime",
+        "${notificationTime.hour}:${notificationTime.minute}");
     _preferences.setString("language", language);
+
+    if (model != null) {
+      _preferences.setString("model", jsonEncode(model!.toJson()));
+    }
   }
 
   static void setLocationType(LocationType type) {

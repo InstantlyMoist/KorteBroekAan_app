@@ -4,6 +4,8 @@ import 'package:kortebroekaan/models/weather_forecast_hourly_model.dart';
 import 'package:kortebroekaan/providers/shared_preferences_provider.dart';
 
 class WeatherModel {
+  late int createdAt;
+
   late String cityName;
   late String countryName;
 
@@ -19,6 +21,8 @@ class WeatherModel {
   late List<WeatherForecastHourlyModel> hourlyForecast;
 
   WeatherModel(Map<String, dynamic> weatherData) {
+    createdAt = DateTime.now().millisecondsSinceEpoch;
+
     // Location data:
     cityName = weatherData['location']['name'];
     countryName = weatherData['location']['country'];
@@ -79,4 +83,29 @@ class WeatherModel {
 
   String temperatureParsedString() =>
       "${(SharedPreferencesProvider.celcius ? feelsLike : feelsLike * 1.8 + 32).toStringAsFixed(1)}°${SharedPreferencesProvider.celcius ? 'C' : 'F'}";
+
+  WeatherModel.fromJson(Map<String, dynamic> json)
+      : createdAt = json['createdAt'],
+        cityName = json['cityName'],
+        countryName = json['countryName'],
+        conditionCode = json['conditionCode'],
+        uv = json['uv'].toDouble(),
+        feelsLike = json['feelsLike'].toDouble(),
+        dailyForecast = (json['dailyForecast'] as List)
+            .map((e) => WeatherForecastDailyModel.fromJson(e))
+            .toList(),
+        hourlyForecast = (json['hourlyForecast'] as List)
+            .map((e) => WeatherForecastHourlyModel.fromJson(e))
+            .toList();
+
+  Map<String, dynamic> toJson() => {
+        'createdAt': createdAt,
+        'cityName': cityName,
+        'countryName': countryName,
+        'conditionCode': conditionCode,
+        'uv': uv,
+        'feelsLike': feelsLike,
+        'dailyForecast': dailyForecast,
+        'hourlyForecast': hourlyForecast,
+      };
 }

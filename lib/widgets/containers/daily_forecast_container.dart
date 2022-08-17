@@ -3,7 +3,6 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'package:kortebroekaan/constants/app_colors.dart';
 import 'package:kortebroekaan/models/weather_model.dart';
 import 'package:kortebroekaan/widgets/entries/daily_forecast_entry.dart';
-import 'package:kortebroekaan/widgets/entries/hourly_forecast_entry.dart';
 import 'package:kortebroekaan/widgets/text/p.dart';
 
 class DailyForecastContainer extends StatefulWidget {

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:kortebroekaan/constants/app_colors.dart';
 import 'package:kortebroekaan/models/weather_model.dart';
