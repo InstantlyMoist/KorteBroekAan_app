@@ -1,0 +1,168 @@
+{
+  "_easter_egg": {
+    "tap_to_play": "A P P U Y E Z  P O U R  J O U E R",
+    "score": "Score : {score}",
+    "top_score": "Meilleur score : {topscore}",
+    "back": "Précédent"
+  },
+  "_notification": {
+    "title": "Peut-on porter un short aujourd'hui ?",
+    "subtitle": "Ouvrez l'application pour le savoir"
+  },
+  "_forecasts": {
+    "1000": "Ensoleillé",
+    "1003": "Partiellement nuageux",
+    "1006": "Couvert",
+    "1009": "Couvert",
+    "1030": "Brumeux",
+    "1063": "Averses possibles",
+    "1066": "Chutes de neige irrégulières possibles",
+    "1069": "Neige humide irrégulière possible",
+    "1072": "Bruine verglaçante irrégulière possible",
+    "1087": "Orages possibles",
+    "1114": "Neige",
+    "1117": "Tempête de neige",
+    "1135": "Brouillard",
+    "1147": "Givre",
+    "1150": "Bruine légère irrégulière",
+    "1153": "Bruine légère",
+    "1168": "Bruine verglaçante",
+    "1171": "Forte bruine verglaçante",
+    "1180": "Légère pluie irrégulière",
+    "1183": "Légère pluie",
+    "1186": "Pluie occasionnelle modérée",
+    "1189": "Pluie modérée",
+    "1192": "Forte pluie occasionnelle",
+    "1195": "Forte pluie",
+    "1198": "Légère pluie verglaçante",
+    "1201": "Pluie verglaçante modérée à forte",
+    "1204": "Verglas léger",
+    "1207": "Verglas modéré à fort",
+    "1210": "Légère neige irrégulière",
+    "1213": "Légère neige",
+    "1216": "Neige modérée irrégulière",
+    "1219": "Neige modérée",
+    "1222": "Forte neige irrégulière",
+    "1225": "Forte neige",
+    "1237": "Grêle",
+    "1240": "Averses légères",
+    "1243": "Averses modérées à fortes",
+    "1246": "Fortes averses",
+    "1249": "Légère neige humide",
+    "1252": "Neige humide modérée à forte",
+    "1255": "Légères chutes de neige",
+    "1258": "Chutes de neige modérées à fortes",
+    "1261": "Légère grêle",
+    "1264": "Tempête de grêle modérée à forte",
+    "1273": "Averses orageuses irrégulières",
+    "1276": "Orages modérés à forts",
+    "1279": "Léger orage de neige irrégulier",
+    "1282": "Orage de neige modéré à lourd"
+  },
+  "_days": {
+    "today": "Aujourd'hui",
+    "tomorrow": "Demain",
+    "day_after_tomorrow": "Après-demain"
+  },
+  "_sheets": {
+    "_purchase_ok_sheet": {
+      "title": "Achat réussi !",
+      "text": "Vous pouvez maintenant profiter d'une expérience sans publicité",
+      "close": "OK !"
+    },
+    "_purchase_failed_sheet": {
+      "title": "Une erreur s'est produite",
+      "text": "Malheureusement, votre achat a échoué, veuillez réessayer plus tard."
+    },
+    "_uv_index_sheet": {
+      "title": "Indice UV",
+      "text": "La puissance solaire est définie sur une échelle de 0 à 16. Les effets des différentes puissances sont listés ci-dessous.\n\n1-2 : Faible soleil, vous pouvez vous poser dehors sans aucune protection\n\n3-7 : Soleil moyen, utilisez de la crème solaire et cherchez de l'ombre dans l'après-midi\n\n8-11 : Soleil très fort, évitez d'aller à l'extérieur dans l'après-midi. Utilisez de la crème solaire.\n\n11-16 : Soleil extrême, n'allez pas dehors dans l'après-midi. Utilisez de la crème solaire, les coups de soleil apparaissent très rapidement"
+    },
+    "_location_type_sheet": {
+      "title": "Voulez-vous nous partager votre emplacement ?",
+      "text": "Votre emplacement sera utilisé pour déterminer si vous pouvez ou non porter un short. Vous pouvez choisir d'entrer manuellement un emplacement",
+      "manual": "Saisir manuellement l'emplacement",
+      "automatic": "Autoriser le partage de position"
+    },
+    "_ask_location_sheet": {
+      "title": "Veuillez saisir votre emplacement",
+      "text": "Vous avez choisi de sélectionner manuellement un emplacement. Vous pouvez tous choisir de partager automatiquement votre emplacement !",
+      "enter_location": "Entrez un emplacement",
+      "automatic": "Localisation automatique",
+      "continue": "Continuer"
+    },
+    "_url_launcher_sheet": {
+      "title": "Faites attention !",
+      "text": "Vous allez être envoyé à votre navigateur.\n\nCela peut prendre quelques secondes.",
+      "open": "Ouvrir le lien",
+      "close": "Fermer"
+    },
+    "_filter_information_sheet": {
+      "title": "Informations sur les filtres",
+      "text": "En ouvrant cette application, vous vous êtes sans doute demandé si vous pouvez porter un short, mais qu'est-ce qui détermine si vous le pouvez ?\n\nEn premier lieu la température est vérifiée. Utiliser le filtre de moyenne signifie que la température doit être supérieure à 15°C.\n\nEnsuite, la probabilité de pluie est regardée. Si elle est de moins de 90%, alors il est conclu que vous pouvez porter un short ! :)",
+      "current": "La température minimale de votre filtre est actuellement de {temperature} et la probabilité de pluie maximale est de {chance}%.",
+      "close": "Fermer"
+    }
+  },
+  "_screens": {
+    "_home_screen": {
+      "title": "Puis-je porter un short ?",
+      "rain_chance": "{chance}% de chance de pluie",
+      "now": "Maintenant",
+      "daily_forecast": "Prévisions sur 3 jours",
+      "_graph": {
+        "title": "Portez-vous un short aujourd'hui ?",
+        "text": "Votez ici pour ce que vous portez. Ensuite vous pourrez voir ce que les autres portent !",
+        "yes": "Short",
+        "no": "Pantalon long"
+      },
+      "_tiles": {
+        "_sunscreen": {
+          "title": "Utilisez de la crème solaire",
+          "yes": "Oui",
+          "no": "Non",
+          "uv_index": "L'indice UV est {uv}"
+        },
+        "_temperature": {
+          "title": "Refroidissement éolien",
+          "yes": "Un temps pour un short",
+          "no": "Un temps pour pantalon"
+        }
+      }
+    },
+    "_share": {
+      "yes": "Vous pouvez porter un short à {location} aujourd'hui ! La température attendue sera de {temp}°C avec {chance}% de chance de pluie",
+      "bo": "Malheureusement, vous ne pouvez pas porter de short à {location} aujourd'hui... La température prévue sera de {temp}°C avec {chance}% de chance de pluie"
+    },
+    "_settings_screen": {
+      "title": "Paramètres",
+      "_filter": {
+        "title": "Sensibilité",
+        "_values": {
+          "0": "Faiblesse",
+          "1": "Moyenne",
+          "2": "Audacieux",
+          "3": "Légende"
+        }
+      },
+      "_theme": {
+        "title": "Thème",
+        "dark": "Sombre",
+        "light": "Clair"
+      },
+      "_unit": {
+        "title": "Unité"
+      },
+      "_notifications": {
+        "title": "Notifications quotidiennes",
+        "on": "Activées",
+        "off": "Désactivées"
+      },
+      "language": "Langue :",
+      "reset_location": "Réinitialiser l'emplacement",
+      "remove_ads": "Supprimer les publicités",
+      "restore_purchases": "Restaurer les achats",
+      "set_notification_time": "Définir l'heure de notification (actuellement : {current})"
+    }
+  }
+}
