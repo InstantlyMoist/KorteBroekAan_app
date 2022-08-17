@@ -124,7 +124,7 @@
           "uv_index": "L'indice UV est {uv}"
         },
         "_temperature": {
-          "title": "Refroidissement éolien",
+          "title": "Température ressentie",
           "yes": "Un temps pour un short",
           "no": "Un temps pour pantalon"
         }
