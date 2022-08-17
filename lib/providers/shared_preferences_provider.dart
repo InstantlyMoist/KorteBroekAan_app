@@ -87,6 +87,8 @@ class SharedPreferencesProvider {
     locationType = null;
     location = null;
 
+    model = null;
+
     _preferences.remove('locationType');
     _preferences.remove('location');
 
