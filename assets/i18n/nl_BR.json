@@ -100,6 +100,7 @@
     "_filter_information_sheet": {
       "title": "Informatie over filters",
       "text": "Als gij dezen app opent hedde gij ongetwijfeld de vroag gekrigge of ge un korten box aan kent vandoag. Maar waarop wordt di ellik gebaseerd?\n\nAllerirst wordt er gekeken noar d’n temperatuur, bij het gemiddelde filter mot dizze hoger liggen dan 15 graden celcius.\n\nOk wordt er gekeken noar d’n regenkans, als dizze klèner is dan 90% wordt d’n conclusie getrokken da gij un korten box àn kent doen :)",
+      "current": "Jouw filter staat op minimoal {temperature} en maximoal {chance}% regenkans.",
       "close": "Sluiten"
     }
   },

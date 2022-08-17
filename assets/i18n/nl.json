@@ -100,6 +100,7 @@
     "_filter_information_sheet": {
       "title": "Informatie over filters",
       "text": "Als je deze app opent heb je ongetwijfeld de vraag gehad of je een korte broek aan kunt vandaag. Maar waarop wordt dit eigenlijk gebaseerd?\n\nAllereerst wordt er gekeken naar de temperatuur, bij het gemiddelde filter moet deze hoger liggen dan 15 graden celcius.\n\nOok wordt er gekeken naar de regenkans, als deze kleiner is dan 90% wordt de conclusie getrokken dat je een korte broek aan kunt doen :)",
+      "current": "Jouw filter staat op minimaal {temperature} en maximaal {chance}% regenkans.",
       "close": "Sluiten"
     }
   },
