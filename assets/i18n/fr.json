@@ -76,7 +76,7 @@
     },
     "_uv_index_sheet": {
       "title": "Indice UV",
-      "text": "La puissance solaire est définie sur une échelle de 0 à 16. Les effets des différentes puissances sont listés ci-dessous.\n\n1-2 : Faible soleil, vous pouvez vous poser dehors sans aucune protection\n\n3-7 : Soleil moyen, utilisez de la crème solaire et cherchez de l'ombre dans l'après-midi\n\n8-11 : Soleil très fort, évitez d'aller à l'extérieur dans l'après-midi. Utilisez de la crème solaire.\n\n11-16 : Soleil extrême, n'allez pas dehors dans l'après-midi. Utilisez de la crème solaire, les coups de soleil apparaissent très rapidement"
+      "text": "La puissance solaire est définie sur une échelle de 0 à 16. Les effets des différentes puissances sont listés ci-dessous.\n\n0-2: Faible soleil, vous pouvez vous poser dehors sans aucune protection\n\n3-7 : Soleil moyen, utilisez de la crème solaire et cherchez de l'ombre dans l'après-midi\n\n8-11 : Soleil très fort, évitez d'aller à l'extérieur dans l'après-midi. Utilisez de la crème solaire.\n\n11-16 : Soleil extrême, n'allez pas dehors dans l'après-midi. Utilisez de la crème solaire, les coups de soleil apparaissent très rapidement"
     },
     "_location_type_sheet": {
       "title": "Voulez-vous nous partager votre emplacement ?",

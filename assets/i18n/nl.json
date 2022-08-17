@@ -76,7 +76,7 @@
     },
     "_uv_index_sheet": {
       "title": "UV-index",
-      "text": "Zonkracht wordt uitgedrukt in waarden 0-16. Hieronder worden de effecten van diverse zonkrachten beschreven.\n\n1-2 : Lage zonkracht, u kunt veilig buiten komen zonder bescherming\n\n3-7: Middelmatige zonkracht, zoek schaduw op tijdens de middag en smeer je in\n\n8-11: Zeer hoge zonkracht, ga niet naar buiten tijdens te middag. Insmeren is absoluut noodzakelijk\n\n11-16: Exteme zonkracht, ga niet naar buiten in de middag. Insmeren is noodzakelijk, je verbrandt zeer snel"
+      "text": "Zonkracht wordt uitgedrukt in waarden 0-16. Hieronder worden de effecten van diverse zonkrachten beschreven.\n\n0-2: Lage zonkracht, u kunt veilig buiten komen zonder bescherming\n\n3-7: Middelmatige zonkracht, zoek schaduw op tijdens de middag en smeer je in\n\n8-11: Zeer hoge zonkracht, ga niet naar buiten tijdens te middag. Insmeren is absoluut noodzakelijk\n\n11-16: Exteme zonkracht, ga niet naar buiten in de middag. Insmeren is noodzakelijk, je verbrandt zeer snel"
     },
     "_location_type_sheet": {
       "title": "Mogen we je locatie weten?",

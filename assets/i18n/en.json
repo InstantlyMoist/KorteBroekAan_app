@@ -76,7 +76,7 @@
     },
     "_uv_index_sheet": {
       "title": "UV-index",
-      "text": "Solar power is defined on a scale from 0 to 16. The effects of various solar powers are listed below.\n\n1-2 : Weak solar power, you can safely sit outside without any protection\n\n3-7: Average solar power, use sunblock and seek shade in the afternoon\n\n8-11: Very high solar power, avoid going outside in the afternoon. Use sunscreen\n\n11-16: Exteme solar power, do not go outside in the afternoon. Use sunscreen, sunburn will occur quickly"
+      "text": "Solar power is defined on a scale from 0 to 16. The effects of various solar powers are listed below.\n\n0-2: Weak solar power, you can safely sit outside without any protection\n\n3-7: Average solar power, use sunblock and seek shade in the afternoon\n\n8-11: Very high solar power, avoid going outside in the afternoon. Use sunscreen\n\n11-16: Exteme solar power, do not go outside in the afternoon. Use sunscreen, sunburn will occur quickly"
     },
     "_location_type_sheet": {
       "title": "Will you share your location with us?",

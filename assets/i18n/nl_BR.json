@@ -76,7 +76,7 @@
     },
     "_uv_index_sheet": {
       "title": "UV-index",
-      "text": "Zonkracht wordt uitgedrukt in woarden 0-16. Hierunder worre d’n effecten van diverse zonkrachten beschreven.\n\n1-2 : Lage zonkracht, ge ken veilig buiten komme zonder bescherming\n\n3-7: Middelmatige zonkracht, ga d’n schaduw in tijdens de middag en smirt oew eigen in\n\n8-11: Zeer hoge zonkracht, ga nie naar buiten tijdens de middag. Insmirre is belangrijk\n\n11-16: Extreme zonkracht, ga nie naar buiten in de middag. Insmirre is verrekes belangrijk, ge krèt heul gauw unne rooie kop"
+      "text": "Zonkracht wordt uitgedrukt in woarden 0-16. Hierunder worre d’n effecten van diverse zonkrachten beschreven.\n\n0-2: Lage zonkracht, ge ken veilig buiten komme zonder bescherming\n\n3-7: Middelmatige zonkracht, ga d’n schaduw in tijdens de middag en smirt oew eigen in\n\n8-11: Zeer hoge zonkracht, ga nie naar buiten tijdens de middag. Insmirre is belangrijk\n\n11-16: Extreme zonkracht, ga nie naar buiten in de middag. Insmirre is verrekes belangrijk, ge krèt heul gauw unne rooie kop"
     },
     "_location_type_sheet": {
       "title": "Mugge wij oewen locatie witten?",
