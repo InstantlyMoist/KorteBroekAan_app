@@ -12,8 +12,8 @@ class NotificationProvider {
     const AndroidInitializationSettings initializationSettingsAndroid =
         AndroidInitializationSettings('app_icon');
 
-    IOSInitializationSettings initializationSettingsIOS =
-        IOSInitializationSettings(
+    DarwinInitializationSettings initializationSettingsIOS =
+        DarwinInitializationSettings(
             requestSoundPermission: true,
             requestBadgePermission: true,
             requestAlertPermission: true,
@@ -22,9 +22,7 @@ class NotificationProvider {
               String? title,
               String? body,
               String? payload,
-            ) async {
-
-            });
+            ) async {});
 
     InitializationSettings initializationSettings = InitializationSettings(
         android: initializationSettingsAndroid,
@@ -43,7 +41,7 @@ class NotificationProvider {
       translate("_notification.subtitle"),
       _nextMorning(),
       const NotificationDetails(
-        iOS: IOSNotificationDetails(
+        iOS: DarwinNotificationDetails(
           presentAlert: true,
           presentBadge: false,
           presentSound: true,
@@ -68,7 +66,12 @@ class NotificationProvider {
     DateTime now = DateTime.now();
     TZDateTime nowTz = TZDateTime.now(local);
 
-    TZDateTime schedule = TZDateTime.utc(now.year, now.month, now.day, SharedPreferencesProvider.notificationTime.hour - 2, SharedPreferencesProvider.notificationTime.minute);
+    TZDateTime schedule = TZDateTime.utc(
+        now.year,
+        now.month,
+        now.day,
+        SharedPreferencesProvider.notificationTime.hour - 2,
+        SharedPreferencesProvider.notificationTime.minute);
     return schedule;
   }
 }

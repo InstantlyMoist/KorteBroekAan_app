@@ -102,6 +102,12 @@
       "text": "En ouvrant cette application, vous vous êtes sans doute demandé si vous pouvez porter un short, mais qu'est-ce qui détermine si vous le pouvez ?\n\nEn premier lieu la température est vérifiée. Utiliser le filtre de moyenne signifie que la température doit être supérieure à 15°C.\n\nEnsuite, la probabilité de pluie est regardée. Si elle est de moins de 90%, alors il est conclu que vous pouvez porter un short ! :)",
       "current": "La température minimale de votre filtre est actuellement de {temperature} et la probabilité de pluie maximale est de {chance}%.",
       "close": "Fermer"
+    },
+    "_webshop_sheet": {
+      "title": "NIEUW: Webshop!",
+      "text": "Wist jij dat we sinds kort een webshop hebben? Zo kan je tijdens die magische dag een passend kledingstuk vinden!",
+      "open": "Naar webshop",
+      "close": "Ik wil niet cool zijn"
     }
   },
   "_screens": {

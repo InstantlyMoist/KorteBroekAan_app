@@ -93,6 +93,12 @@
       "text": "عند فتح التطبيق, لقد تساءلت إذا كان بإمكانك ارتداء السراويل القصيرة. ولكن ما الذي يحدد استطاعتك؟\n\nفي البداية يتم فحص درجة الحرارة. ان استخدام الفلتر المتوسط يعني ​ان تكون أكثر من 15 درجة مئوية .\n\nثم، يتم فحص احتمال تساقط الامطار. اذا كان اقل من 90%, سيتم استنتاج أنه يمكنك ارتداء السراويل القصيرة! :)",
       "current": "تم ضبط الفلتر على {temperature} كحد أدنى ولاحتمال سقوط أمطار بنسبة {chance}٪ كحد أقصى.",
       "close": "اغلاق"
+    },
+    "_webshop_sheet": {
+      "title": "NIEUW: Webshop!",
+      "text": "Wist jij dat we sinds kort een webshop hebben? Zo kan je tijdens die magische dag een passend kledingstuk vinden!",
+      "open": "Naar webshop",
+      "close": "Ik wil niet cool zijn"
     }
   },
   "_screens": {

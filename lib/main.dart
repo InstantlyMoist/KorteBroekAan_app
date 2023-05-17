@@ -17,7 +17,7 @@ void main() async {
 
   await SharedPreferencesProvider.load();
 
-  SharedPreferencesProvider.languages = ['nl', 'en', 'fy', 'nl_BR', 'ar', 'fr'];
+  SharedPreferencesProvider.languages = ['nl', 'en', 'fy', 'ar', 'fr', 'sr', 'it', 'de'];
 
   await InAppPurchasesProvider.init();
 

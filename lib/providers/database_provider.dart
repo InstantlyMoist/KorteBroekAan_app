@@ -3,7 +3,6 @@ import 'package:intl/intl.dart';
 import 'package:kortebroekaan/models/short_pants_data.dart';
 
 class DatabaseProvider {
-
   static late DatabaseReference counterRef;
 
   static List<ShortPantsData> yesData = [];
@@ -11,12 +10,10 @@ class DatabaseProvider {
 
   static Future<void> init() async {
     counterRef = FirebaseDatabase.instance.ref("days");
-    counterRef.keepSynced(true);
 
-    DataSnapshot snapshot = await counterRef.get();
+    DataSnapshot snapshot = await counterRef.limitToLast(7).get();
     List<DataSnapshot> children = snapshot.children.toList();
-    children =
-        children.sublist(children.length - 7 > 0 ? children.length - 7 : 0);
+
     for (DataSnapshot ds in children) {
       String key = ds.key!;
       List<DataSnapshot> timeSnapshot = ds.children.toList();
@@ -43,5 +40,4 @@ class DatabaseProvider {
           ServerValue.increment(1),
         );
   }
-
 }

@@ -28,6 +28,7 @@ import 'package:kortebroekaan/widgets/containers/hourly_forecast_container.dart'
 import 'package:kortebroekaan/widgets/rows/info_row.dart';
 import 'package:kortebroekaan/widgets/buttons/round_button.dart';
 import 'package:kortebroekaan/widgets/sheets/uv_index_sheet.dart';
+import 'package:kortebroekaan/widgets/sheets/webshop_sheet.dart';
 import 'package:kortebroekaan/widgets/text/h1.dart';
 import 'package:kortebroekaan/widgets/text/p.dart';
 import 'package:kortebroekaan/widgets/text/pTiny.dart';
@@ -111,7 +112,8 @@ class _HomeScreenState extends State<HomeScreen>
       _bannerAd!.load();
     }
 
-    _counterSubscription = DatabaseProvider.counterRef.onValue.listen((event) {
+    _counterSubscription = DatabaseProvider.counterRef.limitToLast(1).onValue.listen((event) {
+      print("Got data from database: ${event.snapshot.value}");
       setState(() {
         String lastKey = event.snapshot.children.last.key!;
         int yes = (event.snapshot.children.last.child("yes").value ?? 0) as int;
@@ -155,14 +157,29 @@ class _HomeScreenState extends State<HomeScreen>
     double maxScrollHeight = MediaQuery.of(context).size.height / 2;
 
     _controller.addListener(() {
-      setState(() {
-        _scrollPos = 1 - (_controller.offset / maxScrollHeight).clamp(0, 1);
-      });
+      // setState(() {
+      //   _scrollPos = 1 - (_controller.offset / maxScrollHeight).clamp(0, 1);
+      // });
     });
   }
 
+  bool shown = false;
+
   @override
   Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      if (shown) return;
+      shown = true;
+      if (!SharedPreferencesProvider.webshopMessageSeen) {
+        ModalShower.showModalSheet(
+            context,
+            WebshopSheet(
+                darkColor: AppColors.shortPantsDarkColor(
+                    widget.weatherModel.dailyForecast[0].shortPants()),
+                lightColor: AppColors.shortPantsLightColor(
+                    widget.weatherModel.dailyForecast[0].shortPants())));
+      }
+    });
     return Scaffold(
       backgroundColor: AppColors.shortPantsDarkColor(
           widget.weatherModel.dailyForecast[0].shortPants()),
@@ -225,6 +242,7 @@ class _HomeScreenState extends State<HomeScreen>
                       // ),
                       const Spacer(),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           RoundButton(
                             data: Icons.settings,
@@ -252,9 +270,9 @@ class _HomeScreenState extends State<HomeScreen>
                           const Spacer(),
                           // Padding(
                           //   padding:
-                          //       const EdgeInsets.only(right: 16, bottom: 16),
+                          //       const EdgeInsets.only(right: 16, bottom: 8),
                           //   child: RoundButton(
-                          //     data: Icons.settings_accessibility,
+                          //     svgAsset: "assets/icons/broek.svg",
                           //     onPressed: () {},
                           //     shortPants: widget.weatherModel.dailyForecast[0]
                           //         .shortPants(),
@@ -262,7 +280,6 @@ class _HomeScreenState extends State<HomeScreen>
                           // ),
                           RoundButton(
                             data: Icons.share,
-                            size: 32,
                             onPressed: () => ShareProvider.share(
                                 widget.weatherModel, context),
                             shortPants: widget.weatherModel.dailyForecast[0]
@@ -364,7 +381,8 @@ class _HomeScreenState extends State<HomeScreen>
                           height: 16,
                         ),
                         if (_bannerAd != null &&
-                            !SharedPreferencesProvider.removeAdsPurchased && _bannerAdLoaded)
+                            !SharedPreferencesProvider.removeAdsPurchased &&
+                            _bannerAdLoaded)
                           Container(
                             alignment: Alignment.center,
                             width: _bannerAd!.size.width.toDouble(),

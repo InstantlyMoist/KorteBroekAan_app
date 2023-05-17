@@ -102,6 +102,12 @@
       "text": "When opening this app, you have undoutebly wondered whether you can wear shorts, but what determines if you can?\n\nFirst of all the temperature is checked. Using the average filter means that this must be more than 15 degrees celsius.\n\nNext, the chance of rain is checked. If this is less than 90%, it will be concluded that you can wear shorts! :)",
       "current": "Your current filter minimum temperature is currently {temperature} and the maximum rainchance is {chance}%.",
       "close": "Close"
+    },
+    "_webshop_sheet": {
+      "title": "NIEUW: Webshop!",
+      "text": "Wist jij dat we sinds kort een webshop hebben? Zo kan je tijdens die magische dag een passend kledingstuk vinden!",
+      "open": "Naar webshop",
+      "close": "Ik wil niet cool zijn"
     }
   },
   "_screens": {

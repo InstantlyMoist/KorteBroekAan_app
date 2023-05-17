@@ -1,0 +1,174 @@
+{
+  "_easter_egg": {
+    "tap_to_play": "T O C C A  P E R  G I O C A R E",
+    "score": "Punteggio: {score}",
+    "top_score": "Punteggio Migliore: {topscore}",
+    "back": "Indietro"
+  },
+  "_notification": {
+    "title": "Potresti indossare i pantaloncini oggi?",
+    "subtitle": "Apri l' applicazione per scoprirlo"
+  },
+  "_forecasts": {
+    "1000": "Soleggiato",
+    "1003": "Parzialmente nuvoloso",
+    "1006": "Nuvoloso",
+    "1009": "Nuvoloso",
+    "1030": "Nebbioso",
+    "1063": "Possibilità di acquazzoni",
+    "1066": "Possibilità di nevicata irregolare",
+    "1069": "Possibilità di nevischio irregolare",
+    "1072": "Possibilità di pioviggine sopraffusa irregolare",
+    "1087": "Possibilità di temporali",
+    "1114": "Neve",
+    "1117": "Bufera",
+    "1135": "Nebbia",
+    "1147": "Brina",
+    "1150": "Pioviggine Irregolare",
+    "1153": "Pioviggine",
+    "1168": "Pioviggine sopraffusa",
+    "1171": "Pioviggine sopraffusa abbondante",
+    "1180": "Pioggia leggera irregolare",
+    "1183": "Pioggia leggera",
+    "1186": "Pioggia moderata occasionale",
+    "1189": "Pioggia moderata",
+    "1192": "Pioggia abbondante occasionale",
+    "1195": "Pioggia abbondante",
+    "1198": "Pioggia gelata leggera",
+    "1201": "Pioggia gelata da moderata ad abbondante",
+    "1204": "Ghiaccio stradale leggero",
+    "1207": "Ghiaccio stradale da moderato ad abbondante",
+    "1210": "Neve leggera irregolare",
+    "1213": "Neve leggera",
+    "1216": "Neve moderata irregolare",
+    "1219": "Neve moderata",
+    "1222": "Neve abbondante irregolare",
+    "1225": "Neve abbondante",
+    "1237": "Grandine",
+    "1240": "Acquazzoni leggeri",
+    "1243": "Acquazzoni da moderati ad abbondanti",
+    "1246": "Acquazzoni abbondanti",
+    "1249": "Nevischio leggero",
+    "1252": "Nevischio da moderato a pesante",
+    "1255": "Nevicata leggera",
+    "1258": "Nevicata da moderata ad abbondante",
+    "1261": "Grandine leggera",
+    "1264": "Grandinata da moderata ad abbondante",
+    "1273": "Temporali irregolari",
+    "1276": "Temporali da moderati ad abbondante",
+    "1279": "Tempesta di neve leggera irregolare",
+    "1282": "Tempesta di neve da moderata ad abbondante"
+  },
+  "_days": {
+    "today": "Oggi",
+    "tomorrow": "Domani",
+    "day_after_tomorrow": "Dopodomani"
+  },
+  "_sheets": {
+    "_purchase_ok_sheet": {
+      "title": "Acquisto riuscito!",
+      "text": "Ora puoi goderti un'esperienza senza pubblicità",
+      "close": "Ok!"
+    },
+    "_purchase_failed_sheet": {
+      "title": "Qualcosa è andato storto",
+      "text": "Sfortunatamente il tuo acquisto non è riuscito, riprova più tardi."
+    },
+    "_uv_index_sheet": {
+      "title": "Indice UV",
+      "text": "Radiazione solare è definita su una scala da 0 a 16. Gli effetti delle varie radiazioni solari sono elencati di seguito.\n\n0-2 : Raggi UV deboli, si può tranquillamente stare all'aperto senza alcuna protezione.\n\n3-7: Raggi UV medi, usare la protezione solare e cercare l'ombra nel pomeriggio.\n\n8-11: raggi UV elevati, evitare di uscire nel pomeriggio. Usare la protezione solare\n\n11-16: Raggi UV estremi, non uscire nel pomeriggio. Usare la protezione solare, le scottature si verificano rapidamente"
+    },
+    "_location_type_sheet": {
+      "title": "Condividerai la tua posizione con noi?",
+      "text": "La tua posizione verrà utilizzata per determinare se puoi indossare o meno pantaloncini, puoi scegliere di inserire manualmente una posizione",
+      "manual": "Inserisci manualmente la posizione",
+      "automatic": "Consenti di condividere la posizione"
+    },
+    "_ask_location_sheet": {
+      "title": "Per favore Inserisci la tua posizione",
+      "text": "Hai scelto di selezionare manualmente una posizione. Puoi sempre scegliere di condividere automaticamente la tua posizione!",
+      "enter_location": "Inserisci una posizione",
+      "automatic": "Posizione automatica",
+      "continue": "Continua"
+    },
+    "_url_launcher_sheet": {
+      "title": "Presta attenzione!",
+      "text": "Sarai inviato al tuo browser.\n\nQuesto potrebbe richiedere alcuni secondi.",
+      "open": "Apri collegamento",
+      "close": "Chiudi"
+    },
+    "_filter_information_sheet": {
+      "title": "Informazioni sui filtri",
+      "text": "Quando si apre questa app, ti sei certamente chiesto se potrai indossare i pantaloncini, ma cosa determina se si possono indossare?\n\nInnanzitutto viene controllata la temperatura. Utilizzando il filtro della media questo significa che deve essere superiore a 15 gradi Celsius.\n\nPoi, la probabilità di pioggia viene controllata. Se è inferiore al 90%, si deduce che puoi indossare i pantaloncini :)",
+      "current": "La temperatura minima del filtro attuale è {temperature} e la probabilità di pioggia massima è di {chance}%.",
+      "close": "Chiudi"
+    },
+    "_webshop_sheet": {
+      "title": "NIEUW: Webshop!",
+      "text": "Wist jij dat we sinds kort een webshop hebben? Zo kan je tijdens die magische dag een passend kledingstuk vinden!",
+      "open": "Naar webshop",
+      "close": "Ik wil niet cool zijn"
+    }
+  },
+  "_screens": {
+    "_home_screen": {
+      "title": "Posso indossare i pantaloncini?",
+      "rain_chance": "{chance}% di possibilità di pioggia",
+      "now": "Adesso",
+      "daily_forecast": "Previsioni di 3 giorni",
+      "_graph": {
+        "title": "Potrai indossare i pantaloncini oggi?",
+        "text": "Vota qui per quello che stai indossando. Dopo di che, puoi vedere cosa stanno indossando gli altri!",
+        "yes": "Pantaloncini",
+        "no": "Pantaloni"
+      },
+      "_tiles": {
+        "_sunscreen": {
+          "title": "Usa protezione solare",
+          "yes": "Sì",
+          "no": "No",
+          "uv_index": "L'indice UV è {uv}"
+        },
+        "_temperature": {
+          "title": "Vento gelido",
+          "yes": "Tempo per i pantaloncini",
+          "no": "Tempo per i pantaloni"
+        }
+      }
+    },
+    "_share": {
+      "yes": "Puoi indossare pantaloncini in {location} oggi! La temperatura prevista oggi sarà di {temp}°C con una probabilità del {chance}% di pioggia",
+      "bo": "Purtroppo, non puoi indossare pantaloncini in {location} oggi... La temperatura prevista oggi sarà di {temp}°C con una probabilità del {chance}% di pioggia"
+    },
+    "_settings_screen": {
+      "title": "Impostazioni",
+      "_filter": {
+        "title": "Sensibilità",
+        "_values": {
+          "0": "Debole",
+          "1": "Media",
+          "2": "Coraggioso",
+          "3": "Legenda"
+        }
+      },
+      "_theme": {
+        "title": "Tema",
+        "dark": "Scuro",
+        "light": "Chiaro"
+      },
+      "_unit": {
+        "title": "Unità"
+      },
+      "_notifications": {
+        "title": "Notifiche giornaliere",
+        "on": "Acceso",
+        "off": "Spento"
+      },
+      "language": "Lingua:",
+      "reset_location": "Reimposta la posizione",
+      "remove_ads": "Rimuovi gli annunci",
+      "restore_purchases": "Ripristina gli acquisti",
+      "set_notification_time": "Imposta l'orario del promemoria (corrente: {current})"
+    }
+  }
+}

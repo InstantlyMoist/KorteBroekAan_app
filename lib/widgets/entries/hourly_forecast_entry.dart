@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:kortebroekaan/constants/app_colors.dart';
 
 class HourlyForecastEntry extends StatelessWidget {
-  HourlyForecastEntry(
+  const HourlyForecastEntry(
       {Key? key,
       required this.hour,
       required this.temperature,
@@ -11,10 +11,10 @@ class HourlyForecastEntry extends StatelessWidget {
       required this.conditionCode})
       : super(key: key);
 
-  String hour;
-  int conditionCode;
-  String temperature;
-  bool shortPants;
+  final String hour;
+  final int conditionCode;
+  final String temperature;
+  final bool shortPants;
 
   @override
   Widget build(BuildContext context) {

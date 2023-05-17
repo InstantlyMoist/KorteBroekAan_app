@@ -22,6 +22,7 @@ class SharedPreferencesProvider {
   static bool darkMode = false;
   static bool celcius = true;
   static bool notifications = true;
+  static bool webshopMessageSeen = false;
 
   static bool removeAdsPurchased = false;
 
@@ -44,6 +45,9 @@ class SharedPreferencesProvider {
     }
     if (_preferences.containsKey('darkMode')) {
       darkMode = _preferences.getBool('darkMode')!;
+    }
+    if (_preferences.containsKey('webshopMessageSeen')) {
+      webshopMessageSeen = _preferences.getBool('webshopMessageSeen')!;
     }
     if (_preferences.containsKey('celcius')) {
       celcius = _preferences.getBool('celcius')!;
@@ -108,6 +112,7 @@ class SharedPreferencesProvider {
     _preferences.setBool('darkMode', darkMode);
     _preferences.setBool('celcius', celcius);
     _preferences.setBool('notifications', notifications);
+    _preferences.setBool('webshopMessageSeen', webshopMessageSeen);
     _preferences.setInt("canVoteIn", canVoteIn!.millisecondsSinceEpoch);
     _preferences.setInt("topScore", topScore);
     _preferences.setBool("removeAdsPurchased", removeAdsPurchased);
@@ -131,6 +136,9 @@ class SharedPreferencesProvider {
     }
     if (name == 'celcius') {
       celcius = !celcius;
+    }
+    if (name == 'webshopMessageSeen') {
+      webshopMessageSeen = true;
     }
     if (name == 'notifications') {
       notifications = !notifications;

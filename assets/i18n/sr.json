@@ -1,0 +1,174 @@
+{
+  "_easter_egg": {
+    "tap_to_play": "K L I K N I  D A  P U S T I Š",
+    "score": "Skor: {score}",
+    "top_score": "Najbolji skor: {topscore}",
+    "back": "Nazad"
+  },
+  "_notification": {
+    "title": "Možeš li da nosiš šorc danas?",
+    "subtitle": "Otvori aplikaciju da saznaš"
+  },
+  "_forecasts": {
+    "1000": "Sunčano",
+    "1003": "Delimično oblačno",
+    "1006": "Oblačno",
+    "1009": "Oblačno",
+    "1030": "Maglovito",
+    "1063": "Mogućnost pljuskova",
+    "1066": "Mogućnost delimičnog snega",
+    "1069": "Mogućnost delimičnog vlažnog snega",
+    "1072": "Mogućnost ledene kiše",
+    "1087": "Mogućnost oluja s grmljavinom",
+    "1114": "Sneg",
+    "1117": "Mećava",
+    "1135": "Magla",
+    "1147": "Inje",
+    "1150": "Neredovna blaga kiša",
+    "1153": "Blaga kiša",
+    "1168": "Ledena kiša",
+    "1171": "Jaka ledena kiša",
+    "1180": "Neredovna lagana kiša",
+    "1183": "Lagana kiša",
+    "1186": "Povremena umerena kiša",
+    "1189": "Umerena kiša",
+    "1192": "Povremena jaka kiša",
+    "1195": "Jaka kiša",
+    "1198": "Slaba ledena kiša",
+    "1201": "Umerena do jaka ledena kiša",
+    "1204": "Slab crni led",
+    "1207": "Umeren do jak crni led",
+    "1210": "Neredovan slab sneg",
+    "1213": "Slab sneg",
+    "1216": "Neredovan umeren sneg",
+    "1219": "Umeren sneg",
+    "1222": "Neredovan jak sneg",
+    "1225": "Jak sneg",
+    "1237": "Grad",
+    "1240": "Slabi pljuskovi",
+    "1243": "Umereni do jaki pljuskovi",
+    "1246": "Jaki pljuskovi",
+    "1249": "Slab vlažan sneg",
+    "1252": "Umeren do jak vlažan sneg",
+    "1255": "Slab sneg",
+    "1258": "Umeren do jak sneg",
+    "1261": "Slab grad",
+    "1264": "Umeren do jak grad",
+    "1273": "Neredovni pljuskovi s grmljavinom",
+    "1276": "Umerene do jake oluje s grmljavinom",
+    "1279": "Neredovna slaba snežna oluja",
+    "1282": "Umerena do jaka snežna oluja"
+  },
+  "_days": {
+    "today": "Danas",
+    "tomorrow": "Sutra",
+    "day_after_tomorrow": "Prekosutra"
+  },
+  "_sheets": {
+    "_purchase_ok_sheet": {
+      "title": "Kupovina uspešna!",
+      "text": "Sad možeš da uživas u iskustvu bez reklama",
+      "close": "Okej!"
+    },
+    "_purchase_failed_sheet": {
+      "title": "Nešto je pošlo po zlu",
+      "text": "Nažalost ti kupovina nije uspela, molimo probaj ponovo kasnije."
+    },
+    "_uv_index_sheet": {
+      "title": "UV indeks",
+      "text": "Jačina sunca se definiše na skali od 0 do 16. Efekti različitih jačina sunca su izlistani ispod.\n\n1-2: Slaba jačina sunca, možeš bezbedno da sediš napolju bez ikakve zaštite\n\n3-7: Prosečna jačina sunca, koristi kremu za sunce i popodne traži hlad\n\n8-11: Veoma jaka jačina sunca, popodne izbegavaj izlazak napolje. Koristi kremu za sunce\n\n11-16: Ekstremna jačina sunca, popodne nemoj da ideš napolje. Koristi kremu za sunce, brzo ćeš da izgoriš"
+    },
+    "_location_type_sheet": {
+      "title": "Hoćeš li da podeliš svoju lokaciju s nama?",
+      "text": "Tvoja lokacija će se koristiti za određivanje je li možeš da nosiš šorc ili ne, možeš da izabereš da manuelno uneseš lokaciju",
+      "manual": "Manuelno unesi lokaciju",
+      "automatic": "Dozvoli deljenje lokacije"
+    },
+    "_ask_location_sheet": {
+      "title": "Molimo unesi svoju lokaciju",
+      "text": "Tvoj odabir je da manuelno selektuješ lokaciju. Uvek možeš da odabereš da automatski deliš svoju lokaciju!",
+      "enter_location": "Unesi lokaciju",
+      "automatic": "Automatska lokacija",
+      "continue": "Nastavi"
+    },
+    "_url_launcher_sheet": {
+      "title": "Obrati pažnju!",
+      "text": "Poslaćemo te na tvoj pretraživač.\n\nOvo može da potraje par sekundi.",
+      "open": "Otvori link",
+      "close": "Zatvori"
+    },
+    "_filter_information_sheet": {
+      "title": "Informacije o filterima",
+      "text": "Prilikom ulaska u ovu aplikaciju te je sigurno zanimalo možeš li da nosiš šorc, ali šta određuje je li možeš?\n\nPre svega, proverava se sva temperatura. Pri filteru \"prosek\", ovo znači da mora da bude 15 stepeni celzijusa ili više.\n\nSledeće se proverava šansa za kišu. Ako je ona ispod 90%, zaključićemo da možeš da nosiš šorc! :)",
+      "current": "Tvoj trenutni filter za minimalnu temperaturu je {temperature}, a maksimalna šansa za kišu je {chance}%.",
+      "close": "Zatvori"
+    },
+    "_webshop_sheet": {
+      "title": "NIEUW: Webshop!",
+      "text": "Wist jij dat we sinds kort een webshop hebben? Zo kan je tijdens die magische dag een passend kledingstuk vinden!",
+      "open": "Naar webshop",
+      "close": "Ik wil niet cool zijn"
+    }
+  },
+  "_screens": {
+    "_home_screen": {
+      "title": "Mogu li da nosim šorc?",
+      "rain_chance": "{chance}% šanse za kišu",
+      "now": "Sada",
+      "daily_forecast": "Prognoza za 3 dana",
+      "_graph": {
+        "title": "Nosiš li šorc danas?",
+        "text": "Glasaj ovde šta nosiš. Nakon toga možeš da vidiš šta ostali nose!",
+        "yes": "Šorc",
+        "no": "Duge pantalone"
+      },
+      "_tiles": {
+        "_sunscreen": {
+          "title": "Koristi kremu za sunce",
+          "yes": "Da",
+          "no": "Ne",
+          "uv_index": "UV indeks je {uv}"
+        },
+        "_temperature": {
+          "title": "Jačina hlađenja vetrom",
+          "yes": "Vreme je za šorc",
+          "no": "Vreme je za duge pantalone"
+        }
+      }
+    },
+    "_share": {
+      "yes": "Možeš da nosiš šorc u mestu {location} danas! Današnja očekivanja temperatura je {temp}°C s {chance}% šanse za kišu",
+      "bo": "Nažalost ne možeš da nosiš šorc u mestu {location} danas...  Današnja očekivana temperatura je {temp}°C s {chance}% šanse za kišu"
+    },
+    "_settings_screen": {
+      "title": "Podešavanja",
+      "_filter": {
+        "title": "Osetljivost",
+        "_values": {
+          "0": "Slabić",
+          "1": "Prosek",
+          "2": "Odvažan",
+          "3": "Kraljina"
+        }
+      },
+      "_theme": {
+        "title": "Tema",
+        "dark": "Tamna",
+        "light": "Svetla"
+      },
+      "_unit": {
+        "title": "Jedinica"
+      },
+      "_notifications": {
+        "title": "Dnevne notifikacije",
+        "on": "Uključene",
+        "off": "Isključene"
+      },
+      "language": "Jezik:",
+      "reset_location": "Resetuj lokaciju",
+      "remove_ads": "Ukloni reklame",
+      "restore_purchases": "Kompenzuj kupovine",
+      "set_notification_time": "Postavi vreme za notifikaciju (Trenutno: {current})"
+    }
+  }
+}

@@ -34,7 +34,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We use your location to give you an accurate weather forecast to tell you if you're able to wear shorts.</string>
+	<string>We use your location to give you an accurate weather forecast to tell you if you&apos;re able to wear shorts.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>ConfigurationIntent</string>
@@ -65,5 +65,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We use your location to update the weather according to your location.</string>
 </dict>
 </plist>

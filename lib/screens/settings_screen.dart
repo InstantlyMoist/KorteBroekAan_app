@@ -426,6 +426,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               widget.weatherModel.dailyForecast[0].shortPants(),
                             ),
                           ),
+                          const SizedBox(
+                            width: 16,
+                          ),
+                          SvgButton(
+                            assetName: "assets/icons/shop.svg",
+                            url: "https://kortebroekaan.nl/winkel",
+                            lightColor: AppColors.shortPantsLightColor(
+                              widget.weatherModel.dailyForecast[0].shortPants(),
+                            ),
+                            darkColor: AppColors.shortPantsDarkColor(
+                              widget.weatherModel.dailyForecast[0].shortPants(),
+                            ),
+                          ),
                         ],
                       ),
                     ],
