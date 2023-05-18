@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:firebase_database/firebase_database.dart';
@@ -79,14 +80,9 @@ class _HomeScreenState extends State<HomeScreen>
     }
   }
 
-  @override
-  void initState() {
-    super.initState();
-    _shakeController = AnimationController(vsync: this);
-    _updateWidget();
-
+  void _loadAds() async {
     InterstitialAd.load(
-      adUnitId: 'ca-app-pub-1364717858891314/5606978841',
+      adUnitId: Platform.isAndroid ? 'ca-app-pub-1364717858891314/5606978841' : 'ca-app-pub-1364717858891314/4155643835',
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (InterstitialAd ad) {
@@ -98,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen>
       ),
     );
     _bannerAd = BannerAd(
-      adUnitId: 'ca-app-pub-1364717858891314/6730862092',
+      adUnitId: Platform.isAndroid ? 'ca-app-pub-1364717858891314/6730862092' : 'ca-app-pub-1364717858891314/8968986812',
       size: AdSize.fullBanner,
       request: const AdRequest(),
       listener: BannerAdListener(onAdLoaded: (ad) {
@@ -111,6 +107,15 @@ class _HomeScreenState extends State<HomeScreen>
     if (_bannerAd != null && !SharedPreferencesProvider.removeAdsPurchased) {
       _bannerAd!.load();
     }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _shakeController = AnimationController(vsync: this);
+    _updateWidget();
+
+    _loadAds();
 
     _counterSubscription = DatabaseProvider.counterRef.limitToLast(1).onValue.listen((event) {
       print("Got data from database: ${event.snapshot.value}");
@@ -157,9 +162,9 @@ class _HomeScreenState extends State<HomeScreen>
     double maxScrollHeight = MediaQuery.of(context).size.height / 2;
 
     _controller.addListener(() {
-      // setState(() {
-      //   _scrollPos = 1 - (_controller.offset / maxScrollHeight).clamp(0, 1);
-      // });
+      setState(() {
+        _scrollPos = 1 - (_controller.offset / maxScrollHeight).clamp(0, 1);
+      });
     });
   }
 
@@ -253,7 +258,7 @@ class _HomeScreenState extends State<HomeScreen>
                                       onUpdate: () => setState(() {}),
                                     ),
                                     false)
-                                .then((value) {
+                                .then((value) async {
                               setState(() {});
                               if (_ad != null) {
                                 if (!SharedPreferencesProvider.adShown &&

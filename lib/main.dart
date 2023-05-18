@@ -31,7 +31,7 @@ void main() async {
   );
 
   if (kDebugMode) {
-    FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+    FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(false);
   } else {
     FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
   }
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
           },
         ),
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }

@@ -35,10 +35,6 @@ class HourlyForecastEntry extends StatelessWidget {
             "assets/icons/weather/$conditionCode.svg",
             color: AppColors.shortPantsDarkColorException(shortPants),
           ),
-          // Icon(
-          //   Icons.sunny,
-          //   color: AppColors.shortPantsDarkColorException(shortPants),
-          // ),
           const SizedBox(
             height: 8,
           ),

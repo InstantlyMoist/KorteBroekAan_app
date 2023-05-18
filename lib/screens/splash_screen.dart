@@ -45,10 +45,14 @@ class _SplashScreenState extends State<SplashScreen> {
   void _load() async {
     changeLocale(context, SharedPreferencesProvider.language);
 
+    DateTime startTime = DateTime.now();
+
     var jsonText =
         await rootBundle.loadString('assets/splash_screen_hints.json');
     facts = jsonDecode(jsonText);
     setRandomFact();
+    print("Locale change took ${DateTime.now().difference(startTime)}");
+
 
     await dotenv.load(fileName: ".env");
 
@@ -59,6 +63,7 @@ class _SplashScreenState extends State<SplashScreen> {
         ? NotificationProvider.register()
         : NotificationProvider.unregister();
 
+    // start time
     await DatabaseProvider.init();
 
     if (SharedPreferencesProvider.model != null) {
