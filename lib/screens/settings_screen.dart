@@ -90,8 +90,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
         AppColors.shortPantsLightColor(buffer.dailyForecast[0].shortPants());
     Color darkColor =
         AppColors.shortPantsDarkColor(buffer.dailyForecast[0].shortPants());
-    Color darkColorException = AppColors.shortPantsDarkColorException(
-        buffer.dailyForecast[0].shortPants());
 
     final TimeOfDay? time = await showTimePicker(
       context: context,
