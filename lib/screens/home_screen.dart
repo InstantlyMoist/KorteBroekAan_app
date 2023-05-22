@@ -123,18 +123,19 @@ class _HomeScreenState extends State<HomeScreen>
 
     _loadAds();
 
-    _counterSubscription =
-        DatabaseProvider.counterRef.limitToLast(1).onValue.listen((event) {
-      String lastKey = event.snapshot.children.last.key!;
-      int yes = (event.snapshot.children.last.child("yes").value ?? 0) as int;
-      int no = (event.snapshot.children.last.child("no").value ?? 0) as int;
-      if (DatabaseProvider.yesData.last.date != lastKey) {
+    _counterSubscription = DatabaseProvider.counterRef.limitToLast(1).onChildChanged.listen((event) {
+      String lastKey = event.snapshot.key!;
+      int yes = (event.snapshot.child("yes").value ?? 0) as int;
+      int no = (event.snapshot.child("no").value ?? 0) as int;
+
+      if (DatabaseProvider.yesData.isEmpty || DatabaseProvider.yesData.last.date != lastKey) {
         DatabaseProvider.yesData.add(ShortPantsData(lastKey, yes));
         DatabaseProvider.noData.add(ShortPantsData(lastKey, no));
       } else {
         DatabaseProvider.yesData.last.amount = yes;
         DatabaseProvider.noData.last.amount = no;
       }
+
       _graphRefresher.value++;
     });
   }
