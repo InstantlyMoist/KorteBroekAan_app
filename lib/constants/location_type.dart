@@ -1,3 +1,0 @@
-enum LocationType {
-  manual, automatic
-}
